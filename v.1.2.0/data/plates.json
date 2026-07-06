@@ -1,0 +1,1202 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a rectangular plate 100 by 60 with a thickness of 5mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 60, 5]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی فولادی با ابعاد 80 در 40 و ضخامت 3 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[80, 40, 3]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered rectangular base plate 120 by 80 by 6 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([120, 80, 6], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی سنگین به طول 150، عرض 100 و ضخامت 10 میلی‌متر با استفاده از linear_extrude مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=10)\n    square([150, 100]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a thin rectangular mounting plate 60x30x2 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([60, 30, 2]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه فاصله‌دهنده مستطیلی متمرکز با ابعاد [50, 20, 4] بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[50, 20, 4], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a rectangular plate 80 by 50 mm extruded to a height of 8mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8)\n    square([80, 50]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز 100 در 40 در 5 میلی‌متر با استفاده از square و linear_extrude طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5, center=true)\n    square(size=[100, 40], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid rectangular structural plate 120x60 mm with 4mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([120, 60, 4]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه لاتون مستطیلی نازک 1 میلی‌متری با ابعاد 40 در 20 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[40, 20, 1]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered 80x30x6 mm rectangular plate."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([80, 30, 6], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پایه مستطیلی بزرگ 150 در 80 با ضخامت 8 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8)\n    square([150, 80]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a rectangular plate measuring 60 by 40 by 3 mm with center=true."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[60, 40, 3], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پوششی مستطیلی نازک 100 در 50 در 2 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 50, 2]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 10mm thick rectangular bar plate 120mm by 40mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=10)\n    square([120, 40]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز 50 در 30 در 5 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5, center=true)\n    square(size=[50, 30], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model an 80 by 60 mm rectangular plate with a thickness of 4mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[80, 60, 4]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز [100, 80, 6] بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 80, 6], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a long rectangular plate 150x60x5 mm using linear_extrude."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5)\n    square([150, 60]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پشتیبان مستطیلی کوچک 40 در 30 در 2 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([40, 30, 2]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered rectangular link plate measuring 60 by 20 by 3 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[60, 20, 3], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد OpenSCAD برای یک صفحه مستطیلی 80 در 20 در 8 میلی‌متر بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8)\n    square([80, 20]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered rectangular plate 120x50 mm with 5mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5, center=true)\n    square(size=[120, 50], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی به طول 100، عرض 30 و ضخامت 4 میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 30, 4]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a centered rectangular block plate size 50x40x6 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[50, 40, 6], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی سنگین 150 در 120 در 10 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=10)\n    square([150, 120]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a thin rectangular plate measuring 60x50x2 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([60, 50, 2]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز 80 در 60 در 5 میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[80, 60, 5], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a rectangular plate 100x60 mm extruded 8mm high."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8)\n    square([100, 60]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز 120 در 100 در 6 میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=6, center=true)\n    square(size=[120, 100], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a miniature rectangular plate 40x25x3 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([40, 25, 3]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز با ابعاد [50, 35, 4] بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[50, 35, 4], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a rectangular plate measuring 80 by 45 by 5 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5)\n    square([80, 45]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی متمرکز 100 در 70 در 3 میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 70, 3], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a long rectangular structural plate 150x50x8 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[150, 50, 8]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a square plate 80x80x3 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([80, 80, 3]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی 60 در 60 با ضخامت 5 بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[60, 60, 5]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered square base plate 100 by 100 by 6 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([100, 100, 6], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی توپر با ابعاد 50 در 50 در 4 میلی‌متر با استفاده از linear_extrude مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4)\n    square(50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a centered square plate [40, 40, 2]."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[40, 40, 2], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی سنگین 120 در 120 میلی‌متر با ضخامت 10 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=10)\n    square(120);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 1mm thin square shim plate 30x30 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([30, 30, 1]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه سازه‌ای مربعی متمرکز 80 در 80 در 8 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8, center=true)\n    square(size=[80, 80], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a large square plate measuring 150x150x10 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[150, 150, 10]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی متمرکز 60 در 60 در 4 میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([60, 60, 4], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x50 mm square plate extruded to 3mm height."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=3)\n    square(50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد OpenSCAD برای یک صفحه مربعی متمرکز به ابعاد 100 در 100 در 5 میلی‌متر بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5, center=true)\n    square(size=[100, 100], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a solid square plate measuring 40 by 40 by 6 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([40, 40, 6]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی متمرکز [80, 80, 5] ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[80, 80, 5], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 120x120 mm square base plate with 8mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8)\n    square(120);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پوششی مربعی نازک 60 در 60 در 2 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([60, 60, 2]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a heavy duty centered square plate 100x100x10 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cube(size=[100, 100, 10], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی 50 در 50 در 5 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5)\n    square(50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered square plate measuring 80x80x4 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4, center=true)\n    square(size=[80, 80], center=true);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک صفحه مربعی 150 در 150 در 6 میلی‌متر را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "cube([150, 150, 6]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a circular plate with diameter 60 and thickness 4."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=4, d=60, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دیسکی دایره‌ای به قطر 80 و ضخامت 5 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=80, h=5, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered circular base plate of diameter 100mm and thickness 6mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=6, d=100, center=true, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای نازک به شعاع 20 و ارتفاع 2 میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(r=20, h=2, $fn=50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered circular plate 50mm dia by 3mm thick using linear_extrude."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=3, center=true)\n    circle(d=50, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه فلنچی دایره‌ای سنگین به قطر 120 و ضخامت 8 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=8, d=120, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 1mm thin circular shim plate of 30mm diameter."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=30, h=1, $fn=32);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد OpenSCAD برای یک صفحه دایره‌ای متمرکز با شعاع 40 و ضخامت 10 میلی‌متر بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(r=40, h=10, center=true, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a large circular base plate 150mm in diameter and 10mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=10)\n    circle(r=75, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای متمرکز به قطر 60 و ارتفاع 5 میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=5, d=60, center=true, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid circular plate measuring 50mm diameter and 4mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=50, h=4, $fn=50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای متمرکز به قطر 100 و ضخامت 8 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8, center=true)\n    circle(d=100, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a circular plate with radius 20mm and 3mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(r=20, h=3, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک صفحه دایره‌ای متمرکز d=80 و h=6 را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=6, d=80, center=true, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a circular cover plate 120mm in diameter and 5mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=120, h=5, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای نازک به قطر 60 و ضخامت 2 با استفاده از circle و linear_extrude طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=2)\n    circle(d=60, $fn=50);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered circular plate of radius 50mm and height 4mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(r=50, h=4, center=true, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه سازه‌ای دایره‌ای به قطر 50 و ضخامت 6 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=6, d=50, $fn=64);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered circular disc plate of radius 40mm and 4mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4, center=true)\n    circle(r=40, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای توپر به قطر 150 و ارتفاع 8 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=150, h=8, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an equilateral triangular plate with 60mm circumdiameter and 4mm thickness."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=4, d=60, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مثلث قائم‌الزاویه با اضلاع 80 و 60 که تا ضخامت 5 میلی‌متر اکسترود شده ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5)\n    polygon(points=[[0, 0], [80, 0], [0, 60]]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered equilateral triangular plate of diameter 80mm and thickness 5mm."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=80, h=5, center=true, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مثلثی به قطر 100 و ضخامت 6 میلی‌متر با استفاده از linear_extrude و circle با $fn=3 مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=6)\n    circle(d=100, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an isosceles triangular plate with base 100mm and height 80mm, thickness 6mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=6)\n    polygon(points=[[0, 0], [100, 0], [50, 80]]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مثلثی بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=3, d=50, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a right triangular gusset plate 60 by 40 by 4 mm."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4)\n    polygon(points=[[0, 0], [60, 0], [0, 40]]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مثلثی متمرکز به قطر 120 و ضخامت 8 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=120, h=8, center=true, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 5mm thick triangular structural plate with vertex points [[0,0], [80,0], [40,50]]."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5)\n    polygon(points=[[0, 0], [80, 0], [40, 50]]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه لاتون مثلثی نازک به قطر 40 و ضخامت 2 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=2)\n    circle(d=40, $fn=3);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a hexagonal plate."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=5, d=60, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه شش ضلعی با قطر 80 و ضخامت 6 میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=80, h=6, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered hexagonal base plate 100mm diameter by 8mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=8, d=100, center=true, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه شش ضلعی به قطر 50 و ضخامت 4 میلی‌متر با استفاده از circle و linear_extrude مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4)\n    circle(d=50, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a heavy centered hexagonal plate d=120, h=10."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=120, h=10, center=true, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه شش ضلعی به قطر 40 و ضخامت 3 میلی‌متر با استفاده از مختصات رأس‌های polygon بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=3)\n    circle(r=20, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered hexagonal plate 80mm diameter by 5mm height."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=5, center=true)\n    circle(d=80, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه نصب شش ضلعی منتظم به قطر 60 و ضخامت 4 میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=4, d=60, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a 100mm hexagonal plate 6mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=6)\n    circle(r=50, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه سازه‌ای شش ضلعی متمرکز بزرگ به قطر 150 و ضخامت 10 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(d=150, h=10, center=true, $fn=6);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an octagonal plate 80mm diameter and 5mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=5, d=80, $fn=8);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پنج ضلعی منتظم به قطر 60 و ضخامت 4 میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=4)\n    circle(d=60, $fn=5);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered decagonal plate (10-sided) 100mm in diameter and 6mm thick."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=6, d=100, center=true, $fn=10);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پایه هشت ضلعی متمرکز به قطر 120 و ضخامت 8 میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "linear_extrude(height=8, center=true)\n    circle(d=120, $fn=8);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 12-sided dodecagonal plate 80mm in diameter and 6mm thick using linear_extrude."
+      },
+      {
+        "role": "assistant",
+        "content": "cylinder(h=6, d=80, $fn=12);"
+      }
+    ]
+  }
+]

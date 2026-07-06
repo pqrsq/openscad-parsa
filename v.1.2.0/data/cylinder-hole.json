@@ -1,0 +1,1202 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a roller 30mm in diameter and 40mm high with a 10mm axial through bore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=30, h=40, $fn=64);\n    translate([0, 0, -1]) cylinder(h=45, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فاصله‌دهنده استوانه‌ای با قطر ۵۰ و ارتفاع ۲۰ میلی‌متر با سوراخ مرکزی عبوری به قطر ۱۵ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=20);\n    translate([0, 0, -1]) cylinder(h=25, d=15, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered cylinder 40mm in diameter and 30mm high with a 12mm central through bore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=20, h=30, center=true, $fn=100);\n    translate([0, 0, -5]) cylinder(h=40, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بوش کوچک به قطر ۲۰ و ارتفاع ۲۵ میلی‌متر با سوراخ عبوری ۶ میلی‌متر در راستای محور Z ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=20, h=25, $fn=32);\n    translate([0, 0, -1]) cylinder(d=6, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flanged disc 60mm diameter by 15mm thick (centered) with a 20mm center bore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=15, d=60, center=true);\n    translate([0, 0, -5]) cylinder(r=10, h=25, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه سنگین به قطر ۸۰ و ارتفاع ۵۰ میلی‌متر با سوراخ عبوری محوری به قطر ۳۰ مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=50, $fn=100);\n    translate([0, 0, -1]) cylinder(h=60, d=30, $fn=100);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a 25mm diameter spacer 10mm high with an 8mm center hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=25, h=10);\n    translate([0, 0, -1]) cylinder(h=15, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه بزرگ با سوراخ مرکزی به قطر ۱۰۰ و ضخامت ۴۰ میلی‌متر با center=true ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=100, h=40, center=true, $fn=64);\n    translate([0, 0, -5]) cylinder(h=50, d=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a miniature sleeve 15mm in diameter and 20mm long with a 5mm axial hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=7.5, h=20, $fn=32);\n    translate([0, 0, -1]) cylinder(d=5, h=25, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک غلاف استوانه‌ای متمرکز به قطر ۴۰ و طول ۶۰ با سوراخ داخلی ۱۵ میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=60, d=40, center=true);\n    translate([0, 0, -5]) cylinder(r=7.5, h=70, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 50x50 mm cylinder with an axial through hole of diameter 20mm."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=50, $fn=64);\n    translate([0, 0, -1]) cylinder(h=60, d=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک واشر ساده با قطر خارجی ۳۰، ضخامت ۱۵ و سوراخ داخلی ۱۰ میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=30, h=15);\n    translate([0, 0, -1]) cylinder(h=20, d=10, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered roller 60mm diameter by 40mm high with a 25mm central shaft hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=40, center=true, $fn=100);\n    translate([0, 0, -5]) cylinder(h=50, d=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فاصله‌دهنده استوانه‌ای با شعاع ۱۰، ارتفاع ۱۲ و سوراخ عبوری ۶ میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=10, h=12);\n    translate([0, 0, -1]) cylinder(d=6, h=18);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered disc 80mm in diameter, 25mm thick, featuring a 20mm central hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=25, d=80, center=true, $fn=64);\n    translate([0, 0, -5]) cylinder(r=10, h=35, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه توپر به قطر ۴۰ و ارتفاع ۴۰ با یک سوراخ محوری ۱۵ میلی‌متری ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=40, $fn=50);\n    translate([0, 0, -1]) cylinder(h=50, d=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered spacer 30mm diameter and height with an 8mm through bore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=30, h=30, center=true);\n    translate([0, 0, -5]) cylinder(h=40, d=8, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک استوانه به قطر ۵۰ و ارتفاع ۳۰ با سوراخ عبوری مرکزی ۱۲ میلی‌متر را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=30, $fn=64);\n    translate([0, 0, -1]) cylinder(h=40, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered 60mm diameter by 30mm thick cylinder with a 15mm axial opening."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=30, h=30, center=true);\n    translate([0, 0, -5]) cylinder(d=15, h=40, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه با قطر خارجی ۴۰، طول ۲۰ و سوراخ مرکزی ۱۰ میلی‌متری ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=20, d=40, $fn=100);\n    translate([0, 0, -1]) cylinder(r=5, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a cylinder 40mm dia by 50mm high with a 15mm diameter blind hole 20mm deep from the top."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=50, $fn=64);\n    translate([0, 0, 30]) cylinder(d=15, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه توپر به قطر ۵۰ و ارتفاع ۴۰ با سوراخ کور مرکزی به عمق ۱۵ از وجه بالایی بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=50);\n    translate([0, 0, 25]) cylinder(h=15, d=20, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 30mm diameter by 30mm high cylinder with a 10mm blind hole 12mm deep from the top surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=15, h=30, center=true, $fn=64);\n    translate([0, 0, 3]) cylinder(d=10, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۶۰ و طول ۴۰ با سوراخ کور به عمق ۲۰ میلی‌متر از بالا ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=40, $fn=100);\n    translate([0, 0, 20]) cylinder(h=20, d=25, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered roller 40mm dia by 30mm high with a 10mm deep blind hole starting at the top."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=40, center=true);\n    translate([0, 0, 5]) cylinder(r=6, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه سنگین به قطر ۸۰ و ارتفاع ۶۰ با حفره کور به عمق ۲۵ میلی‌متر از بالا ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=60, $fn=64);\n    translate([0, 0, 35]) cylinder(d=30, h=25, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a centered cylinder d=50, h=30 with a top blind hole 12mm deep and 15mm diameter."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=25, h=30, center=true);\n    translate([0, 0, 3]) cylinder(h=12, d=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فاصله‌دهنده به قطر ۲۵ و ارتفاع ۲۵ با سوراخ کور به عمق ۱۰ از بالا بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=25, d=25, $fn=32);\n    translate([0, 0, 15]) cylinder(d=8, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a cylinder 40mm dia by 50mm high with a 15mm diameter blind hole 20mm deep from the bottom surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=50, $fn=64);\n    translate([0, 0, 0]) cylinder(d=15, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۵۰ و ارتفاع ۴۰ با سوراخ کور از پایین به عمق ۱۵ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=50);\n    translate([0, 0, 0]) cylinder(h=15, d=20, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered cylinder 30x30 mm featuring a 12mm deep blind hole starting from the bottom face."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=15, h=30, center=true, $fn=64);\n    translate([0, 0, -15]) cylinder(d=10, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۶۰ و ارتفاع ۴۰ با سوراخ کور به عمق ۲۰ میلی‌متر از سطح پایینی ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=40, $fn=100);\n    translate([0, 0, 0]) cylinder(h=20, d=25, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered roller 40mm dia by 30mm high with a bottom blind bore 10mm deep."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=40, center=true);\n    translate([0, 0, -15]) cylinder(r=6, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه توپر به قطر ۸۰ و ارتفاع ۵۰ با سوراخ کور به عمق ۲۰ میلی‌متر از سطح پایینی ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=50, $fn=64);\n    translate([0, 0, 0]) cylinder(d=30, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a centered cylinder 50mm dia, 30mm high with a 12mm deep bottom blind hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=25, h=30, center=true);\n    translate([0, 0, -15]) cylinder(h=12, d=15, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a cylinder 40mm diameter by 50mm high with an 8mm horizontal cross hole along the X axis at Z=25 using rotate([0,90,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=50, $fn=64);\n    translate([-30, 0, 25]) rotate([0, 90, 0]) cylinder(h=60, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر به قطر ۵۰ و ارتفاع ۶۰ با یک سوراخ عرضی ۱۰ میلی‌متری در راستای محور Y با استفاده از rotate([90,0,0]) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=60, d=50);\n    translate([0, 35, 30]) rotate([90, 0, 0]) cylinder(d=10, h=70, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered cylinder 30mm diameter by 40mm high with a 6mm cross hole through the center along X."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=15, h=40, center=true, $fn=64);\n    translate([-25, 0, 0]) rotate([0, 90, 0]) cylinder(h=50, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۶۰ و ارتفاع ۵۰ با یک سوراخ عرضی افقی ۱۲ میلی‌متری در راستای محور Y ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=50, $fn=100);\n    translate([0, 40, 25]) rotate([90, 0, 0]) cylinder(h=80, d=12, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered roller 40x40 mm with an 8mm cross hole along X offset at Z=10."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=40, center=true);\n    translate([-30, 0, 10]) rotate([0, 90, 0]) cylinder(r=4, h=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه سنگین به قطر ۸۰ و ارتفاع ۶۰ با یک سوراخ عرضی ۱۵ میلی‌متری عبوری در راستای Y ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=60, $fn=64);\n    translate([0, 50, 30]) rotate([90, 0, 0]) cylinder(d=15, h=100, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a centered cylinder d=50, h=40 with a 10mm cross hole along X at Z=-10."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=25, h=40, center=true);\n    translate([-35, 0, -10]) rotate([0, 90, 0]) cylinder(h=70, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۲۵ و ارتفاع ۳۰ با یک سوراخ عرضی ۵ میلی‌متری در محور Y در میانه ارتفاع بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=25, $fn=32);\n    translate([0, 20, 15]) rotate([90, 0, 0]) cylinder(d=5, h=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 60x60 mm cylinder with a 15mm diameter cross hole along the X axis."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=60, center=true, $fn=64);\n    translate([-40, 0, 0]) rotate([0, 90, 0]) cylinder(h=80, d=15, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه با قطر ۴۰ و ارتفاع ۵۰ همراه با یک سوراخ افقی ۱۰ میلی‌متری در محور Y در Z=20 ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=50, d=40);\n    translate([0, 30, 20]) rotate([90, 0, 0]) cylinder(r=5, h=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered roller d=50, h=50 with a 12mm cross hole along X located at Z=15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=50, center=true, $fn=100);\n    translate([-35, 0, 15]) rotate([0, 90, 0]) cylinder(h=70, d=12, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه ساده ۳۰ در ۳۰ با سوراخ عرضی ۶ میلی‌متری در راستای محور Y بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=15, h=30, $fn=32);\n    translate([0, 25, 15]) rotate([90, 0, 0]) cylinder(d=6, h=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a centered cylinder 80mm dia by 50mm high with a 20mm cross hole along X at Z=-15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=50, d=80, center=true);\n    translate([-50, 0, -15]) rotate([0, 90, 0]) cylinder(h=100, d=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه توپر به قطر ۴۰ و طول ۳۰ با سوراخ عرضی ۸ میلی‌متری در راستای Y طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=30, $fn=64);\n    translate([0, 30, 15]) rotate([90, 0, 0]) cylinder(r=4, h=60, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered cylinder d=60, h=40 with a 10mm cross hole passing along X at Z=5."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=60, center=true, $fn=50);\n    translate([-40, 0, 5]) rotate([0, 90, 0]) cylinder(d=10, h=80);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50mm diameter cylinder 40mm high with a 15mm axial center bore and an 8mm horizontal cross hole at Z=20."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=40, $fn=64);\n    translate([0, 0, -1]) cylinder(h=45, d=15);\n    translate([-30, 0, 20]) rotate([0, 90, 0]) cylinder(h=60, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر متمرکز به قطر ۶۰ و ارتفاع ۳۰ با دو سوراخ پین مقابل هم در سطح بالایی به قطر ۶ و عمق ۱۰ در X=-15 و X=15 بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=60, center=true);\n    translate([-15, 0, 5]) cylinder(h=15, d=6);\n    translate([15, 0, 5]) cylinder(h=15, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 40x50 mm cylinder with two parallel horizontal cross holes of 6mm diameter along X at Z=15 and Z=35."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=20, h=50, $fn=100);\n    translate([-25, 0, 15]) rotate([0, 90, 0]) cylinder(h=50, d=6);\n    translate([-25, 0, 35]) rotate([0, 90, 0]) cylinder(h=50, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه d=50 و h=30 با دو سوراخ عبوری محوری متقارن به قطر ۸ میلی‌متر در X=15 و X=-15 ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=30);\n    translate([15, 0, -1]) cylinder(h=32, d=8);\n    translate([-15, 0, -1]) cylinder(h=32, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flanged spacer 60mm diameter by 20mm thick with a 12mm center bore and two 6mm side holes linearly along X."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=20, d=60, $fn=64);\n    translate([0, 0, -1]) cylinder(h=22, d=12);\n    translate([-20, 0, -1]) cylinder(h=22, d=6);\n    translate([20, 0, -1]) cylinder(h=22, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر متمرکز ۸۰ در ۴۰ با سوراخ محوری ۲۰ میلی‌متری، یک سوراخ عرضی در X در Z=-10 و یک سوراخ عرضی در Y در Z=10 مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=40, center=true, $fn=100);\n    translate([0, 0, -22]) cylinder(h=45, d=20);\n    translate([-50, 0, -10]) rotate([0, 90, 0]) cylinder(h=100, d=10);\n    translate([0, 50, 10]) rotate([90, 0, 0]) cylinder(h=100, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a cylinder 50mm dia by 25mm high with a linear layout of three 6mm axial through holes along the X diameter."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=25, h=25);\n    translate([-15, 0, -1]) cylinder(h=27, d=6);\n    translate([0, 0, -1]) cylinder(h=27, d=6);\n    translate([15, 0, -1]) cylinder(h=27, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه متمرکز d=70 و h=30 با سوراخ مرکزی ۱۵ میلی‌متری و دو سوراخ عرضی موازی در محور Y در Z=-5 و Z=5 بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=70, center=true, $fn=64);\n    translate([0, 0, -16]) cylinder(h=32, d=15);\n    translate([0, 35, -5]) rotate([90, 0, 0]) cylinder(h=70, d=6);\n    translate([0, 35, 5]) rotate([90, 0, 0]) cylinder(h=70, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a flanged spacer 60mm dia by 25mm thick featuring a 15mm center bore and three 6mm bolt holes arranged symmetrically."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=60, h=25, $fn=64);\n    translate([0, 0, -1]) cylinder(h=27, d=15);\n    translate([0, 20, -1]) cylinder(h=27, d=6);\n    translate([-17.32, -10, -1]) cylinder(h=27, d=6);\n    translate([17.32, -10, -1]) cylinder(h=27, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه متمرکز ۸۰ در ۵۰ با چهار سوراخ عرضی افقی: دو عدد در راستای X در Z=-15 و Z=15 و دو عدد در راستای Y در Z=-15 و Z=15 مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=50, d=80, center=true);\n    translate([-50, 0, -15]) rotate([0, 90, 0]) cylinder(h=100, d=8);\n    translate([-50, 0, 15]) rotate([0, 90, 0]) cylinder(h=100, d=8);\n    translate([0, 50, -15]) rotate([90, 0, 0]) cylinder(h=100, d=8);\n    translate([0, 50, 15]) rotate([90, 0, 0]) cylinder(h=100, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x40 mm cylinder with a 12mm axial center through bore and three 5mm blind pin holes 10mm deep on the top face."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=40, $fn=100);\n    translate([0, 0, -1]) cylinder(h=42, d=12);\n    translate([15, 0, 30]) cylinder(h=12, d=5);\n    translate([-15, 0, 30]) cylinder(h=12, d=5);\n    translate([0, 15, 30]) cylinder(h=12, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر متمرکز به قطر ۶۰ و ارتفاع ۳۰ با یک چیدمان خطی از چهار سوراخ عبوری محوری ۵ میلی‌متری در محور X طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=30, h=30, center=true, $fn=64);\n    translate([-20, 0, -16]) cylinder(h=32, d=5);\n    translate([-10, 0, -16]) cylinder(h=32, d=5);\n    translate([10, 0, -16]) cylinder(h=32, d=5);\n    translate([20, 0, -16]) cylinder(h=32, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a cylinder d=70, h=40 with a 16mm through bore, two perpendicular cross holes of 8mm at Z=20, and a top blind counterbore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=70);\n    translate([0, 0, -1]) cylinder(h=42, d=16);\n    translate([-40, 0, 20]) rotate([0, 90, 0]) cylinder(h=80, d=8);\n    translate([0, 40, 20]) rotate([90, 0, 0]) cylinder(h=80, d=8);\n    translate([0, 0, 25]) cylinder(h=16, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک ۵۰ در ۲۰ میلی‌متر با چهار سوراخ عبوری محوری ۶ میلی‌متری متقارن با چیدمان مربعی حول مرکز ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=20, $fn=50);\n    translate([12, 12, -1]) cylinder(h=22, d=6);\n    translate([-12, 12, -1]) cylinder(h=22, d=6);\n    translate([-12, -12, -1]) cylinder(h=22, d=6);\n    translate([12, -12, -1]) cylinder(h=22, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered flanged roller 80x30 mm with a 20mm center bore, two 8mm side holes, and a 30mm diameter top counterbore."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=80, center=true, $fn=64);\n    translate([0, 0, -16]) cylinder(h=32, d=20);\n    translate([-25, 0, -16]) cylinder(h=32, d=8);\n    translate([25, 0, -16]) cylinder(h=32, d=8);\n    translate([0, 0, 5]) cylinder(h=11, d=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flanged spacer 60mm dia by 15mm thick with a 3-hole bolt circle pattern of 6mm diameter on a 40mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=15, d=60, $fn=64);\n    translate([0, 20, -1]) cylinder(h=17, d=6);\n    translate([-17.32, -10, -1]) cylinder(h=17, d=6);\n    translate([17.32, -10, -1]) cylinder(h=17, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنچ متمرکز ۸۰ در ۲۰ با سوراخ مرکزی ۲۰ و سه سوراخ پیچ ۸ میلی‌متری روی دایره گام به قطر ۵۰ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=20, center=true, $fn=100);\n    translate([0, 0, -11]) cylinder(h=22, d=20);\n    translate([0, 25, -11]) cylinder(h=22, d=8);\n    translate([-21.65, -12.5, -11]) cylinder(h=22, d=8);\n    translate([21.65, -12.5, -11]) cylinder(h=22, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a cylinder 50mm diameter by 25mm high featuring three 5mm mounting holes on a 30mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=25, h=25);\n    translate([0, 15, -1]) cylinder(h=27, d=5);\n    translate([-13, -7.5, -1]) cylinder(h=27, d=5);\n    translate([13, -7.5, -1]) cylinder(h=27, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۷۰ در ۱۸ با الگوی ۳ سوراخه پیچ به قطر ۶ روی دایره گام ۴۵ میلی‌متری مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=18, d=70, center=true, $fn=64);\n    translate([0, 22.5, -10]) cylinder(h=20, d=6);\n    translate([-19.49, -11.25, -10]) cylinder(h=20, d=6);\n    translate([19.49, -11.25, -10]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flanged spacer with four bolt holes: 80mm dia, 20mm thick, 25mm center bore, and four 8mm holes on a 50mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=20, $fn=64);\n    translate([0, 0, -1]) cylinder(h=22, d=25);\n    translate([25, 0, -1]) cylinder(h=22, d=8);\n    translate([0, 25, -1]) cylinder(h=22, d=8);\n    translate([-25, 0, -1]) cylinder(h=22, d=8);\n    translate([0, -25, -1]) cylinder(h=22, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۶۰ در ۱۵ با چهار سوراخ پیچ ۶ میلی‌متری روی دایره گام ۴۰ میلی‌متری بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=15, d=60, center=true, $fn=100);\n    translate([20, 0, -8.5]) cylinder(h=17, d=6);\n    translate([0, 20, -8.5]) cylinder(h=17, d=6);\n    translate([-20, 0, -8.5]) cylinder(h=17, d=6);\n    translate([0, -20, -8.5]) cylinder(h=17, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 100x25 mm flange adapter with a 30mm center bore and a 4-hole BCD pattern of 10mm holes at 70mm diameter."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=50, h=25);\n    translate([0, 0, -1]) cylinder(h=27, d=30);\n    translate([35, 0, -1]) cylinder(h=27, d=10);\n    translate([0, 35, -1]) cylinder(h=27, d=10);\n    translate([-35, 0, -1]) cylinder(h=27, d=10);\n    translate([0, -35, -1]) cylinder(h=27, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک استوانه متمرکز ۵۰ در ۲۰ با چهار سوراخ نصب ۵ میلی‌متری روی دایره گام ۳۰ را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=20, center=true, $fn=64);\n    translate([15, 0, -11]) cylinder(h=22, d=5);\n    translate([0, 15, -11]) cylinder(h=22, d=5);\n    translate([-15, 0, -11]) cylinder(h=22, d=5);\n    translate([0, -15, -11]) cylinder(h=22, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an 80x15 mm flange with a 20mm center hole and a 6-hole bolt circle pattern of 6mm diameter on a 50mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=15, d=80, $fn=64);\n    translate([0, 0, -1]) cylinder(h=17, d=20);\n    translate([25, 0, -1]) cylinder(h=17, d=6);\n    translate([12.5, 21.65, -1]) cylinder(h=17, d=6);\n    translate([-12.5, 21.65, -1]) cylinder(h=17, d=6);\n    translate([-25, 0, -1]) cylinder(h=17, d=6);\n    translate([-12.5, -21.65, -1]) cylinder(h=17, d=6);\n    translate([12.5, -21.65, -1]) cylinder(h=17, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۱۰۰ در ۲۰ با شش سوراخ پیچ ۸ میلی‌متری با فواصل منظم روی دایره گام ۷۰ مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=100, h=20, center=true, $fn=100);\n    translate([35, 0, -11]) cylinder(h=22, d=8);\n    translate([17.5, 30.31, -11]) cylinder(h=22, d=8);\n    translate([-17.5, 30.31, -11]) cylinder(h=22, d=8);\n    translate([-35, 0, -11]) cylinder(h=22, d=8);\n    translate([-17.5, -30.31, -11]) cylinder(h=22, d=8);\n    translate([17.5, -30.31, -11]) cylinder(h=22, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 60x18 mm spacer featuring a 15mm center bore and six 5mm bolt holes on a 40mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=30, h=18);\n    translate([0, 0, -1]) cylinder(h=20, d=15);\n    translate([20, 0, -1]) cylinder(h=20, d=5);\n    translate([10, 17.32, -1]) cylinder(h=20, d=5);\n    translate([-10, 17.32, -1]) cylinder(h=20, d=5);\n    translate([-20, 0, -1]) cylinder(h=20, d=5);\n    translate([-10, -17.32, -1]) cylinder(h=20, d=5);\n    translate([10, -17.32, -1]) cylinder(h=20, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر فلنچی متمرکز ۹۰ در ۲۵ با سوراخ مرکزی ۲۵ و شش سوراخ ۸ میلی‌متری روی دایره گام ۶۰ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=25, d=90, center=true, $fn=64);\n    translate([0, 0, -13.5]) cylinder(h=27, d=25);\n    translate([30, 0, -13.5]) cylinder(h=27, d=8);\n    translate([15, 25.98, -13.5]) cylinder(h=27, d=8);\n    translate([-15, 25.98, -13.5]) cylinder(h=27, d=8);\n    translate([-30, 0, -13.5]) cylinder(h=27, d=8);\n    translate([-15, -25.98, -13.5]) cylinder(h=27, d=8);\n    translate([15, -25.98, -13.5]) cylinder(h=27, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a heavy 100x20 mm flange plate with a 30mm center bore and an 8-hole bolt circle pattern of 6mm holes on a 70mm BCD."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=100, h=20, $fn=100);\n    translate([0, 0, -1]) cylinder(h=22, d=30);\n    translate([35, 0, -1]) cylinder(h=22, d=6);\n    translate([24.75, 24.75, -1]) cylinder(h=22, d=6);\n    translate([0, 35, -1]) cylinder(h=22, d=6);\n    translate([-24.75, 24.75, -1]) cylinder(h=22, d=6);\n    translate([-35, 0, -1]) cylinder(h=22, d=6);\n    translate([-24.75, -24.75, -1]) cylinder(h=22, d=6);\n    translate([0, -35, -1]) cylinder(h=22, d=6);\n    translate([24.75, -24.75, -1]) cylinder(h=22, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۸۰ در ۱۵ با هشت سوراخ پیچ ۵ میلی‌متری روی دایره گام ۵۰ میلی‌متری مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=15, d=80, center=true, $fn=64);\n    translate([25, 0, -8.5]) cylinder(h=17, d=5);\n    translate([17.68, 17.68, -8.5]) cylinder(h=17, d=5);\n    translate([0, 25, -8.5]) cylinder(h=17, d=5);\n    translate([-17.68, 17.68, -8.5]) cylinder(h=17, d=5);\n    translate([-25, 0, -8.5]) cylinder(h=17, d=5);\n    translate([-17.68, -17.68, -8.5]) cylinder(h=17, d=5);\n    translate([0, -25, -8.5]) cylinder(h=17, d=5);\n    translate([17.68, -17.68, -8.5]) cylinder(h=17, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 120x30 mm adapter flange with a 40mm central bore and an 8-hole BCD pattern of 8mm holes at 90mm diameter."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=60, h=30, $fn=100);\n    translate([0, 0, -1]) cylinder(h=32, d=40);\n    translate([45, 0, -1]) cylinder(h=32, d=8);\n    translate([31.82, 31.82, -1]) cylinder(h=32, d=8);\n    translate([0, 45, -1]) cylinder(h=32, d=8);\n    translate([-31.82, 31.82, -1]) cylinder(h=32, d=8);\n    translate([-45, 0, -1]) cylinder(h=32, d=8);\n    translate([-31.82, -31.82, -1]) cylinder(h=32, d=8);\n    translate([0, -45, -1]) cylinder(h=32, d=8);\n    translate([31.82, -31.82, -1]) cylinder(h=32, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50mm diameter cylinder 40mm high with an off-center axial through hole of 12mm diameter offset by 12mm along X."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=40, $fn=64);\n    translate([12, 0, -1]) cylinder(h=45, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر متمرکز ۶۰ در ۳۰ با یک سوراخ محوری خارج از مرکز به قطر ۱۰ واقع در Y=15 بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=30, d=60, center=true);\n    translate([0, 15, -17.5]) cylinder(d=10, h=35, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a solid cylinder d=40, h=50 with an off-center through hole translated to [-10, 8, -1]."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=20, h=50, $fn=100);\n    translate([-10, 8, -1]) cylinder(h=55, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۸۰ در ۴۰ با یک سوراخ محوری غیرمتمرکز به قطر ۱۵ در X=20 و Y=-10 مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=40, center=true, $fn=64);\n    translate([20, -10, -22.5]) cylinder(r=7.5, h=45, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x50 mm cylinder with an off-center horizontal cross hole along X offset at Y=-15, Z=25."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=50, d=50);\n    translate([0, -15, 25]) rotate([0, 90, 0]) cylinder(d=10, h=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر متمرکز ۶۰ در ۴۰ با سوراخ کناری غیرمتمرکز عبوری در راستای Y در X=-12 ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=30, h=40, center=true, $fn=100);\n    translate([-12, 40, 10]) rotate([90, 0, 0]) cylinder(h=70, d=8, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a 30mm diameter bushing 30mm tall with an eccentric 6mm bore at X=8."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=30, h=30, $fn=32);\n    translate([8, 0, -1]) cylinder(d=6, h=35);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک متمرکز ۷۰ در ۳۵ با سوراخ عبوری محوری غیرمتمرکز در (15, 15) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=35, d=70, center=true);\n    translate([15, 15, -20]) cylinder(r=6, h=40, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a cylindrical spacer d=40, h=25 with a 5mm diameter hole offset by -10mm along the Y axis."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=25, $fn=64);\n    translate([0, -10, -1]) cylinder(h=30, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه سنگین متمرکز ۹۰ در ۴۰ با سوراخ خارج از مرکز ۲۰ میلی‌متری در X=-25 طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=45, h=40, center=true, $fn=64);\n    translate([-25, 0, -25]) cylinder(h=50, d=20, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a cylinder with an angled radial hole: 50mm dia, 50mm high, with an 8mm hole rotated at a 30° angle using rotate([0,30,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=50, $fn=64);\n    translate([0, 0, 25]) rotate([0, 30, 0]) cylinder(h=60, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۶۰ و ارتفاع ۴۰ با یک سوراخ ۱۰ میلی‌متری مورب با زاویه ۴۵ درجه با استفاده از rotate([0,45,0]) ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=60, $fn=100);\n    translate([0, 0, 20]) rotate([0, 45, 0]) cylinder(d=10, h=70, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered cylinder 40x60 mm with a 6mm lubrication hole angled at 60 degrees from the Z axis."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=20, h=60, center=true);\n    translate([0, 0, 0]) rotate([0, 60, 0]) cylinder(h=60, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک رولر سنگین ۸۰ در ۵۰ با یک سوراخ ۱۲ میلی‌متری مایل با زاویه ۱۵ درجه با استفاده از rotate([0,15,0]) مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=80, h=50, $fn=64);\n    translate([0, 0, 25]) rotate([0, 15, 0]) cylinder(r=6, h=80, $fn=64);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered roller d=50, h=40 with an 8mm hole rotated by [-45,0,0] at Z=-10."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=40, d=50, center=true, $fn=100);\n    translate([0, 0, -10]) rotate([-45, 0, 0]) cylinder(h=60, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک استوانه ۶۰ در ۳۰ با سوراخ زاویه‌دار غیرمتمرکز چرخیده با [0,-30,0] در X=15 را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=30, h=30);\n    translate([15, 0, 15]) rotate([0, -30, 0]) cylinder(d=6, h=50, $fn=32);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a centered cylinder 40x40 mm featuring a 5mm hole tilted at 30 degrees along the Y axis using rotate([30,0,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=40, h=40, center=true, $fn=64);\n    translate([0, 10, 0]) rotate([30, 0, 0]) cylinder(d=5, h=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه به قطر ۷۰ و ارتفاع ۵۰ با سوراخ ۱۰ میلی‌متری مورب با زاویه ۶۰- درجه ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(h=50, d=70, $fn=100);\n    translate([0, 0, 30]) rotate([0, -60, 0]) cylinder(r=5, h=80, $fn=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered disc 50x30 mm with an 8mm oil feed hole angled at 45 degrees offset to X=-12."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(d=50, h=30, center=true);\n    translate([-12, 0, 0]) rotate([0, 45, 0]) cylinder(h=50, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک استوانه توپر ۸۰ در ۴۰ با سوراخ ۱۲ میلی‌متری چرخیده با [15,0,0] شروع شده از Z=20 ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cylinder(r=40, h=40, $fn=64);\n    translate([0, 0, 20]) rotate([15, 0, 0]) cylinder(h=90, d=12, $fn=64);\n}"
+      }
+    ]
+  }
+]

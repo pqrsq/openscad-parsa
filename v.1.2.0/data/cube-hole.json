@@ -1,0 +1,1202 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 20mm cube with an 8mm diameter through hole in the center."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(20);\n    translate([10, 10, -1]) cylinder(h=25, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک مربعی ۴۰ در ۴۰ با ارتفاع ۲۰ میلی‌متر و یک سوراخ مرکزی عبوری به قطر ۱۲ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 40, 20]);\n    translate([20, 20, -1]) cylinder(d=12, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered rectangular block of dimensions 60 by 30 by 15 with a 10mm hole passing through the center."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 30, 15], center=true);\n    translate([0, 0, -5]) cylinder(h=25, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۳۰ میلی‌متری متمرکز با یک سوراخ مرکزی به قطر ۱۵ میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(30, center=true);\n    translate([0, 0, -5]) cylinder(d=15, h=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a rectangular plate measuring 80x40x20 mm with a 6mm radius hole through its center."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 40, 20]);\n    translate([40, 20, -1]) cylinder(r=6, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۱۰۰ در ۵۰ در ۲۵ میلی‌متری متمرکز با سوراخ عبوری به قطر ۲۰ میلی‌متر مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[100, 50, 25], center=true);\n    translate([0, 0, -7.5]) cylinder(h=40, d=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a 15mm cube with a 5mm central hole extending all the way through."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(15);\n    translate([7.5, 7.5, -1]) cylinder(d=5, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پایه ۵۰ در ۳۰ با ضخامت ۱۰ میلی‌متر و سوراخ مرکزی عبوری به قطر ۱۲ میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 30, 10]);\n    translate([25, 15, -1]) cylinder(h=20, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a heavy duty block 120x60x30 mm with center=true and a 25mm diameter central hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([120, 60, 30], center=true);\n    translate([0, 0, -10]) cylinder(d=25, h=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه فاصله‌انداز با ابعاد ۴۰ در ۲۵ در ۱۲ میلی‌متر و سوراخ مرکزی به قطر ۶ میلی‌متر بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 25, 12]);\n    translate([20, 12.5, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 25mm cube with center=true, subtracted by a 10mm diameter cylinder along the Z axis."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=25, center=true);\n    translate([0, 0, -5]) cylinder(d=10, h=35);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه مستطیلی با ابعاد ۷۰×۵۰×۲۰ میلی‌متر با یک سوراخ مرکزی به شعاع ۵ میلی‌متر طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[70, 50, 20]);\n    translate([35, 25, -1]) cylinder(r=5, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered square plate 60x60x15 mm with a 20mm central through opening."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 60, 15], center=true);\n    translate([0, 0, -5]) cylinder(h=25, d=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک پایه کوچک با ابعاد ۳۰ در ۲۰ در ۱۰ میلی‌متر با یک سوراخ ۶ میلی‌متری در وسط مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[30, 20, 10]);\n    translate([15, 10, -1]) cylinder(d=6, h=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a 40mm cube having a 15mm circular through cut in the center."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([40, 40, 40]);\n    translate([20, 20, -1]) cylinder(h=50, d=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی ۸۰ میلی‌متری با ضخامت ۲۰ میلی‌متر (متمرکز) و سوراخ مرکزی ۳۰ میلی‌متری ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 80, 20], center=true);\n    translate([0, 0, -10]) cylinder(d=30, h=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a rectangular block 90x40x15 mm featuring an 8mm diameter center hole."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([90, 40, 15]);\n    translate([45, 20, -1]) cylinder(r=4, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه ۵۰ در ۲۵ در ۱۵ میلی‌متری متمرکز با سوراخ عبوری به قطر ۱۰ میلی‌متر ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 25, 15], center=true);\n    translate([0, 0, -5]) cylinder(h=25, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 50mm solid cube with a 20mm through hole drilled through the top face center."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(50);\n    translate([25, 25, -1]) cylinder(d=20, h=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰×۴۰×۳۰ با یک سوراخ عبوری افقی به قطر ۱۰ از دیواره کناری در امتداد محور X با استفاده از rotate([0,90,0]) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 30]);\n    translate([-2, 20, 15]) rotate([0, 90, 0]) cylinder(h=64, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a 50x50x20 mm block with a 12mm horizontal cross hole passing front-to-back along the Y axis using rotate([90,0,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 50, 20]);\n    translate([25, 52, 10]) rotate([90, 0, 0]) cylinder(d=12, h=54);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک متمرکز ۸۰×۴۰×۳۰ میلی‌متری با یک سوراخ عبوری افقی ۱۵ میلی‌متری در محور X طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 40, 30], center=true);\n    translate([-45, 0, 0]) rotate([0, 90, 0]) cylinder(r=7.5, h=90);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 40x30x25 mm block featuring a side-through hole of diameter 8mm along the X axis."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([40, 30, 25]);\n    translate([-2, 15, 12.5]) rotate([0, 90, 0]) cylinder(h=44, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی متمرکز ۶۰×۶۰×۲۰ با یک سوراخ افقی کناری ۱۰ میلی‌متری در امتداد محور Y ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 60, 20], center=true);\n    translate([0, 35, 0]) rotate([90, 0, 0]) cylinder(d=10, h=70);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a 60x40x20 mm block with an 8mm through hole slanted at a 30-degree angle using rotate([0,-30,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 40, 20]);\n    translate([30, -5, 10]) rotate([0, -30, 0]) cylinder(h=50, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x40x20 mm block with a 10mm through hole offset at X=15, Y=20."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 40, 20]);\n    translate([15, 20, -1]) cylinder(h=25, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه مستطیلی ۶۰ در ۴۰ در ۱۵ با سوراخ عبوری ۸ میلی‌متری در مختصات (45, 20) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 15]);\n    translate([45, 20, -2]) cylinder(d=8, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered block 80x50x20 mm with a 12mm through hole shifted by 20mm in X and 10mm in Y."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 20], center=true);\n    translate([20, 10, -12]) cylinder(r=6, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۴۰ میلی‌متری با یک سوراخ عبوری غیرمتمرکز به قطر ۶ در [10, 10] بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(40);\n    translate([10, 10, -1]) cylinder(h=45, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 100x60x25 mm plate with an asymmetric 15mm through bore located at X=25, Y=30."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 60, 25]);\n    translate([25, 30, -2]) cylinder(d=15, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰×۶۰×۲۰ متمرکز با یک سوراخ عبوری ۱۰ میلی‌متری در مختصات (-15, -15) ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 60, 20], center=true);\n    translate([-15, -15, -11]) cylinder(h=25, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write OpenSCAD code for a 70x40x15 mm part with an 8mm diameter hole at X=20, Y=15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([70, 40, 15]);\n    translate([20, 15, -1]) cylinder(r=4, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۳۰ میلی‌متری متمرکز با یک سوراخ عبوری ۶ میلی‌متری که ۸ میلی‌متر در جهت محور X جابجا شده ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=30, center=true);\n    translate([8, 0, -16]) cylinder(d=6, h=35);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make an 80x40x20 mm block having a 12mm diameter through hole positioned near the right edge at X=60, Y=20."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 40, 20]);\n    translate([60, 20, -1]) cylinder(h=25, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مربعی ۴۰ در ۴۰ در ۱۵ با یک سوراخ ۱۰ میلی‌متری در موقعیت X=10 و Y=20 طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 40, 15]);\n    translate([10, 20, -2]) cylinder(h=20, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered 50x50x20 mm block with an 8mm through bore offset to (15, -10)."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 50, 20], center=true);\n    translate([15, -10, -11]) cylinder(r=4, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۲۵ میلی‌متری با سوراخ عبوری غیرمتمرکز ۵ میلی‌متری در موقعیت [8, 12, -1] ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([25, 25, 25]);\n    translate([8, 12, -1]) cylinder(d=5, h=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a thin bar 60x30x10 mm with a 6mm through hole located at X=15, Y=15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 30, 10]);\n    translate([15, 15, -1]) cylinder(h=15, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک سنگین متمرکز ۸۰×۶۰×۳۰ با سوراخ عبوری ۱۵ میلی‌متری در مختصات (-20, 15) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 60, 30], center=true);\n    translate([-20, 15, -16]) cylinder(d=15, h=35);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 40x25x12 mm spacer featuring a 6mm diameter hole offset to X=10."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([40, 25, 12]);\n    translate([10, 12.5, -1]) cylinder(r=3, h=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "کد یک بلوک متمرکز ۵۰×۴۰×۲۵ با یک سوراخ عبوری غیرمتمرکز ۱۰ میلی‌متری در (-12, 10) را بنویس."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 40, 25], center=true);\n    translate([-12, 10, -13]) cylinder(h=30, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 50mm solid cube with a 12mm diameter through hole drilled at X=15, Y=25."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=50);\n    translate([15, 25, -2]) cylinder(d=12, h=55);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه ۱۰۰ در ۵۰ در ۲۰ با یک سوراخ ۱۵ میلی‌متری که در Y وسط بوده ولی در X=30 قرار دارد ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[100, 50, 20]);\n    translate([30, 25, -1]) cylinder(h=25, d=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an 80x50x25 mm block with an off-center side through hole of 8mm diameter along X at Y=15, Z=12 using rotate([0,90,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 25]);\n    translate([-2, 15, 12]) rotate([0, 90, 0]) cylinder(d=8, h=84);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰ در ۴۰ در ۲۰ با سوراخ کناری غیرمتمرکز عبوری در راستای محور Y در موقعیت X=15 با استفاده از rotate([90,0,0]) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 20]);\n    translate([15, 42, 10]) rotate([90, 0, 0]) cylinder(h=44, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 70x50x30 mm block with an off-center horizontal through hole along X shifted by 15mm in Y."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([70, 50, 30], center=true);\n    translate([-40, 15, -5]) rotate([0, 90, 0]) cylinder(r=5, h=80);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه ۵۰ در ۴۰ در ۱۵ با یک سوراخ عرضی غیرمتمرکز در امتداد X واقع در Y=10 مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 40, 15]);\n    translate([-1, 10, 7.5]) rotate([0, 90, 0]) cylinder(d=5, h=52);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered 60x60x25 mm block containing an off-center side through hole along Y at X=-15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 60, 25], center=true);\n    translate([-15, 35, 5]) rotate([90, 0, 0]) cylinder(h=70, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰×۴۰×۲۵ میلی‌متر با سوراخ روغن‌کاری زاویه‌دار غیرمتمرکز با چرخش [-90,-30,0] در X=15 ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 25]);\n    translate([15, -2, 12]) rotate([-90, -30, 0]) cylinder(d=6, h=50);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 80x50x20 mm block with a 30-degree slanted through bore offset to X=-20 using rotate([0,30,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 20], center=true);\n    translate([-20, 0, -15]) rotate([0, 30, 0]) cylinder(r=5, h=45);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x40x30 mm block with a 10mm diameter blind hole of depth 15mm from the top surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 40, 30]);\n    translate([25, 20, 15]) cylinder(h=15, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک مربعی ۴۰ در ۴۰ با ارتفاع ۲۵ و یک سوراخ کور مرکزی با عمق ۱۰ میلی‌متر از بالا بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 40, 25]);\n    translate([20, 20, 15]) cylinder(d=12, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 60x40x20 mm plate with an 8mm deep blind hole from the top face."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 40, 20], center=true);\n    translate([0, 0, 2]) cylinder(r=5, h=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۳۰ میلی‌متری با یک سوراخ کور مرکزی به عمق ۱۵ میلی‌متر از بالا ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(30);\n    translate([15, 15, 15]) cylinder(h=15, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model an 80x50x30 mm block with a 12mm blind hole drilled 12mm deep from the top surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 30]);\n    translate([30, 25, 18]) cylinder(d=12, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه متمرکز ۵۰ در ۵۰ در ۲۰ میلی‌متر با سوراخ کور به عمق ۱۰ میلی‌متر از بالا در مختصات (10, -10) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 50, 20], center=true);\n    translate([10, -10, 0]) cylinder(h=10, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a 40mm cube having a 20mm deep blind hole from the top surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(40);\n    translate([20, 20, 20]) cylinder(r=7.5, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰ در ۳۰ در ۲۵ میلی‌متری با یک سوراخ کور غیرمتمرکز به عمق ۱۲ میلی‌متر از وجه بالایی ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 30, 25]);\n    translate([15, 15, 13]) cylinder(d=10, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a heavy centered block 100x60x40 mm with a 15mm diameter blind hole 15mm deep from top."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 60, 40], center=true);\n    translate([-20, 15, 5]) cylinder(h=15, d=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه ۷۰×۳۵×۲۰ با یک سوراخ کور به عمق ۱۰ میلی‌متر در مرکز وجه بالایی طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[70, 35, 20]);\n    translate([35, 17.5, 10]) cylinder(d=8, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 50x40x30 mm block with a 15mm deep blind hole starting from the bottom surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 40, 30]);\n    translate([25, 20, 0]) cylinder(d=10, h=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه ۶۰ در ۴۰ در ۲۰ با سوراخ کور مرکزی به عمق ۱۰ میلی‌متر از وجه پایینی ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 20]);\n    translate([30, 20, 0]) cylinder(h=10, d=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 80x50x25 mm block with a 12mm deep blind hole from the bottom surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 25], center=true);\n    translate([0, 0, -12.5]) cylinder(r=7.5, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۳۰ میلی‌متری با سوراخ کور غیرمتمرکز به عمق ۱۲ میلی‌متر از سطح پایینی ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=30);\n    translate([10, 15, 0]) cylinder(d=8, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a 100x50x30 mm block with a 20mm diameter blind hole going 15mm up from the bottom."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 50, 30]);\n    translate([50, 25, 0]) cylinder(h=15, d=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک مربعی متمرکز ۴۰×۴۰×۲۰ با سوراخ کور به عمق ۱۰ میلی‌متر از سطح پایینی در (10, -10) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 40, 20], center=true);\n    translate([10, -10, -10]) cylinder(r=4, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Write code for a 50x30x25 mm block with a 12mm deep blind hole from the bottom surface."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 30, 25]);\n    translate([15, 15, 0]) cylinder(h=12, d=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک مکعب ۲۵ میلی‌متری با یک سوراخ کور مرکزی به عمق ۱۰ میلی‌متر از پایین ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([25, 25, 25]);\n    translate([12.5, 12.5, 0]) cylinder(d=6, h=10);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 60x40x30 mm block with a side blind hole 15mm deep from the left face along X using rotate([0,90,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 40, 30]);\n    translate([-1, 20, 15]) rotate([0, 90, 0]) cylinder(h=15, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۵۰×۵۰×۲۵ با یک سوراخ کور به عمق ۲۰ میلی‌متر از وجه جلویی در محور Y با استفاده از rotate([-90,0,0]) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 50, 25]);\n    translate([25, -1, 12.5]) rotate([-90, 0, 0]) cylinder(d=10, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 80x50x20 mm block with a side set-screw blind hole 15mm deep from the right edge."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 20], center=true);\n    translate([41, 0, 0]) rotate([0, -90, 0]) cylinder(r=3, h=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۴۰×۳۰×۲۰ با یک فرورفتگی کور به عمق ۱۲ میلی‌متر از وجه پشتی در امتداد محور Y مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[40, 30, 20]);\n    translate([20, 31, 10]) rotate([90, 0, 0]) cylinder(h=12, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a centered 70x40x30 mm block with an 18mm deep side blind hole along X at Y=10."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([70, 40, 30], center=true);\n    translate([-36, 10, 0]) rotate([0, 90, 0]) cylinder(d=8, h=18);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک ۶۰×۴۰×۳۰ میلی‌متری با یک سوراخ کور روغن‌کاری مورب با زاویه ۳۰ درجه و عمق ۱۵ میلی‌متر از بالا ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 40, 30]);\n    translate([30, 20, 30]) rotate([0, 30, 0]) cylinder(h=15, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 80x50x25 mm block with a 45-degree angled blind hole 12mm deep."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 50, 25], center=true);\n    translate([0, 0, 12.5]) rotate([0, -45, 0]) cylinder(r=4, h=12);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create an 80x80x15 mm flange plate with a circular polar pattern of four 6mm bolt holes on a 40mm diameter bolt circle around the center (40,40)."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 80, 15]);\n    translate([60, 40, -1]) cylinder(h=20, d=6);\n    translate([40, 60, -1]) cylinder(h=20, d=6);\n    translate([20, 40, -1]) cylinder(h=20, d=6);\n    translate([40, 20, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک متمرکز ۷۰×۷۰×۲۰ با الگوی قطبی ۴ سوراخه به قطر ۸ میلی‌متر در شعاع ۲۰ میلی‌متری از مبدأ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[70, 70, 20], center=true);\n    translate([20, 0, -11]) cylinder(d=8, h=25);\n    translate([0, 20, -11]) cylinder(d=8, h=25);\n    translate([-20, 0, -11]) cylinder(d=8, h=25);\n    translate([0, -20, -11]) cylinder(d=8, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a 90x90x15 mm flange featuring a 20mm center bore and four 6mm mounting holes arranged in a circular BCD pattern."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([90, 90, 15]);\n    translate([45, 45, -1]) cylinder(r=10, h=20);\n    translate([70, 45, -1]) cylinder(r=3, h=20);\n    translate([45, 70, -1]) cylinder(r=3, h=20);\n    translate([20, 45, -1]) cylinder(r=3, h=20);\n    translate([45, 20, -1]) cylinder(r=3, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنچ سنگین متمرکز ۱۰۰×۱۰۰×۲۰ با سوراخ مرکزی ۲۵ میلی‌متری و چهار سوراخ پیچ ۸ میلی‌متری در چیدمان قطبی مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[100, 100, 20], center=true);\n    translate([0, 0, -11]) cylinder(h=25, d=25);\n    translate([30, 0, -11]) cylinder(h=25, d=8);\n    translate([0, 30, -11]) cylinder(h=25, d=8);\n    translate([-30, 0, -11]) cylinder(h=25, d=8);\n    translate([0, -30, -11]) cylinder(h=25, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a centered 80x80x15 mm plate with a hexagonal pattern of six 5mm holes arranged at a radius of 20mm."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 80, 15], center=true);\n    translate([20, 0, -8]) cylinder(h=20, d=5);\n    translate([10, 17.32, -8]) cylinder(h=20, d=5);\n    translate([-10, 17.32, -8]) cylinder(h=20, d=5);\n    translate([-20, 0, -8]) cylinder(h=20, d=5);\n    translate([-10, -17.32, -8]) cylinder(h=20, d=5);\n    translate([10, -17.32, -8]) cylinder(h=20, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنچ آداپتور ۱۰۰×۱۰۰×۲۰ با سوراخ مرکزی ۲۰ میلی‌متری و یک الگوی پیچ شش‌ضلعی ۶ سوراخه به قطر ۶ بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[100, 100, 20]);\n    translate([50, 50, -1]) cylinder(d=20, h=25);\n    translate([75, 50, -1]) cylinder(d=6, h=25);\n    translate([62.5, 71.65, -1]) cylinder(d=6, h=25);\n    translate([37.5, 71.65, -1]) cylinder(d=6, h=25);\n    translate([25, 50, -1]) cylinder(d=6, h=25);\n    translate([37.5, 28.35, -1]) cylinder(d=6, h=25);\n    translate([62.5, 28.35, -1]) cylinder(d=6, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered block 90x80x15 mm with six 6mm through holes forming a symmetrical hexagonal layout."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([90, 80, 15], center=true);\n    translate([30, 0, -8]) cylinder(r=3, h=20);\n    translate([15, 25.98, -8]) cylinder(r=3, h=20);\n    translate([-15, 25.98, -8]) cylinder(r=3, h=20);\n    translate([-30, 0, -8]) cylinder(r=3, h=20);\n    translate([-15, -25.98, -8]) cylinder(r=3, h=20);\n    translate([15, -25.98, -8]) cylinder(r=3, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه نصب ۶۰×۶۰×۱۵ میلی‌متر با یک الگوی مثلثی شامل سه سوراخ پیچ ۶ میلی‌متری ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 60, 15]);\n    translate([30, 15, -1]) cylinder(h=20, d=6);\n    translate([50, 45, -1]) cylinder(h=20, d=6);\n    translate([10, 45, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a centered 70x70x20 mm flange block featuring three 8mm holes arranged in an equilateral triangle around the origin."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([70, 70, 20], center=true);\n    translate([0, 20, -11]) cylinder(d=8, h=25);\n    translate([-17.32, -10, -11]) cylinder(d=8, h=25);\n    translate([17.32, -10, -11]) cylinder(d=8, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه ۸۰×۷۰×۱۵ با سوراخ مرکزی ۱۵ میلی‌متری که با یک الگوی مثلثی از سه سوراخ نصب ۶ میلی‌متری احاطه شده مدل‌سازی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 70, 15]);\n    translate([40, 35, -1]) cylinder(h=20, d=15);\n    translate([40, 55, -1]) cylinder(h=20, d=6);\n    translate([22.68, 25, -1]) cylinder(h=20, d=6);\n    translate([57.32, 25, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 60x40x25 mm block with two horizontal side through holes along X at Y=10 and Y=30 using rotate([0,90,0])."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([60, 40, 25]);\n    translate([-1, 10, 12.5]) rotate([0, 90, 0]) cylinder(h=62, d=6);\n    translate([-1, 30, 12.5]) rotate([0, 90, 0]) cylinder(h=62, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک میله ۸۰×۵۰×۲۰ با دو سوراخ عرضی کناری موازی در امتداد Y در X=20 و X=60 با استفاده از rotate([90,0,0]) بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 50, 20]);\n    translate([20, 51, 10]) rotate([90, 0, 0]) cylinder(d=8, h=52);\n    translate([60, 51, 10]) rotate([90, 0, 0]) cylinder(d=8, h=52);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered 70x60x30 mm block with two side set-screw blind holes 15mm deep from the left face at Y=-15 and Y=15."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([70, 60, 30], center=true);\n    translate([-36, -15, 0]) rotate([0, 90, 0]) cylinder(r=3, h=15);\n    translate([-36, 15, 0]) rotate([0, 90, 0]) cylinder(r=3, h=15);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک الگو خطی شامل سه سوراخ عبوری ۸ میلی‌متری روی یک میله ۹۰ در ۳۰ در ۱۵ ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[90, 30, 15]);\n    translate([15, 15, -1]) cylinder(h=20, d=8);\n    translate([45, 15, -1]) cylinder(h=20, d=8);\n    translate([75, 15, -1]) cylinder(h=20, d=8);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a linear pattern of four 6mm holes along a 100x25x15 mm strip."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 25, 15]);\n    translate([15, 12.5, -1]) cylinder(r=3, h=20);\n    translate([35, 12.5, -1]) cylinder(r=3, h=20);\n    translate([55, 12.5, -1]) cylinder(r=3, h=20);\n    translate([75, 12.5, -1]) cylinder(r=3, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک ریل نصب ۱۲۰ در ۳۰ در ۱۵ میلی‌متری با یک الگوی خطی از پنج سوراخ ۶ میلی‌متری بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[120, 30, 15]);\n    translate([20, 15, -1]) cylinder(h=20, d=6);\n    translate([40, 15, -1]) cylinder(h=20, d=6);\n    translate([60, 15, -1]) cylinder(h=20, d=6);\n    translate([80, 15, -1]) cylinder(h=20, d=6);\n    translate([100, 15, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Design a centered bar 80x20x10 mm with four evenly spaced 5mm holes along X."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 20, 10], center=true);\n    translate([-30, 0, -6]) cylinder(h=15, d=5);\n    translate([-10, 0, -6]) cylinder(h=15, d=5);\n    translate([10, 0, -6]) cylinder(h=15, d=5);\n    translate([30, 0, -6]) cylinder(h=15, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه ۸۰ در ۶۰ در ۱۵ با چهار سوراخ نصب ۶ میلی‌متری در گوشه‌ها با فاصله ۱۰ میلی‌متر از لبه ایجاد کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[80, 60, 15]);\n    translate([10, 10, -1]) cylinder(h=20, d=6);\n    translate([70, 10, -1]) cylinder(h=20, d=6);\n    translate([10, 50, -1]) cylinder(h=20, d=6);\n    translate([70, 50, -1]) cylinder(h=20, d=6);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a heavy base plate 100x80x20 mm with four 8mm corner holes in a rectangular pattern."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 80, 20]);\n    translate([15, 15, -1]) cylinder(d=8, h=25);\n    translate([85, 15, -1]) cylinder(d=8, h=25);\n    translate([15, 65, -1]) cylinder(d=8, h=25);\n    translate([85, 65, -1]) cylinder(d=8, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک متمرکز ۶۰×۶۰×۲۰ میلی‌متری با چهار سوراخ در گوشه‌ها با چیدمان متقارن طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 60, 20], center=true);\n    translate([-20, -20, -11]) cylinder(r=3, h=25);\n    translate([20, -20, -11]) cylinder(r=3, h=25);\n    translate([-20, 20, -11]) cylinder(r=3, h=25);\n    translate([20, 20, -11]) cylinder(r=3, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a rectangular pattern of four 5mm through holes on a 50x40x15 mm block."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([50, 40, 15]);\n    translate([10, 10, -1]) cylinder(h=20, d=5);\n    translate([40, 10, -1]) cylinder(h=20, d=5);\n    translate([10, 30, -1]) cylinder(h=20, d=5);\n    translate([40, 30, -1]) cylinder(h=20, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک بلوک فلنچ ۶۰×۶۰×۱۵ میلی‌متر با یک سوراخ مرکزی ۱۵ میلی‌متری و چهار سوراخ پیچ ۵ میلی‌متری در اطراف آن بساز."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[60, 60, 15]);\n    translate([30, 30, -1]) cylinder(d=15, h=20);\n    translate([15, 15, -1]) cylinder(d=5, h=20);\n    translate([45, 15, -1]) cylinder(d=5, h=20);\n    translate([15, 45, -1]) cylinder(d=5, h=20);\n    translate([45, 45, -1]) cylinder(d=5, h=20);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a centered 80x80x20 mm plate featuring a 20mm central hole surrounded by four 8mm mounting holes."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([80, 80, 20], center=true);\n    translate([0, 0, -11]) cylinder(r=10, h=25);\n    translate([-25, -25, -11]) cylinder(r=4, h=25);\n    translate([25, -25, -11]) cylinder(r=4, h=25);\n    translate([-25, 25, -11]) cylinder(r=4, h=25);\n    translate([25, 25, -11]) cylinder(r=4, h=25);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه ۵۰ در ۵۰ در ۱۵ با یک سوراخ مرکزی ۱۲ میلی‌متری و دو سوراخ جانبی ۵ میلی‌متری در محور X طراحی کن."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube(size=[50, 50, 15]);\n    translate([25, 25, -1]) cylinder(h=20, d=12);\n    translate([10, 25, -1]) cylinder(h=20, d=5);\n    translate([40, 25, -1]) cylinder(h=20, d=5);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 100x60x20 mm block with a 20mm center hole and four 6mm corner bolt holes."
+      },
+      {
+        "role": "assistant",
+        "content": "difference() {\n    cube([100, 60, 20]);\n    translate([50, 30, -1]) cylinder(h=25, d=20);\n    translate([20, 15, -1]) cylinder(h=25, d=6);\n    translate([80, 15, -1]) cylinder(h=25, d=6);\n    translate([20, 45, -1]) cylinder(h=25, d=6);\n    translate([80, 45, -1]) cylinder(h=25, d=6);\n}"
+      }
+    ]
+  }
+]
