@@ -1,0 +1,362 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 250×120 ضخامت 12 با 4 countersink قطر 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate 2x2: 250x120x12mm, 4 holes Ø5 with 60° countersink\ndifference() {\n    cube([250, 120, 12]);\n    translate([83.3, 40.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([83.3, 40.0, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([166.7, 40.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([166.7, 40.0, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([83.3, 80.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([83.3, 80.0, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([166.7, 80.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([166.7, 80.0, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Countersink plate 120×60×10: 4 holes Ø6 with 100° taper"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate 2x2: 120x60x10mm, 4 holes Ø6 with 100° countersink\ndifference() {\n    cube([120, 60, 10]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([40.0, 20.0, 7])\n        cylinder(h=3+1, d1=6, d2=13.2, $fn=24);\n    translate([80.0, 20.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([80.0, 20.0, 7])\n        cylinder(h=3+1, d1=6, d2=13.2, $fn=24);\n    translate([40.0, 40.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([40.0, 40.0, 7])\n        cylinder(h=3+1, d1=6, d2=13.2, $fn=24);\n    translate([80.0, 40.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([80.0, 40.0, 7])\n        cylinder(h=3+1, d1=6, d2=13.2, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه 170×90×10 با سوراخ‌های flush countersink"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate center: 170x90x10mm, Ø6 with 90° countersink\ndifference() {\n    cube([170, 90, 10]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=10+2, d=6, $fn=30);\n    translate([85.0, 45.0, 8])\n        cylinder(h=2+1, d1=6, d2=10.0, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate 120×60×20 با سوراخ‌های countersink زاویه 82°"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate center: 120x60x20mm, Ø8 with 82° countersink\ndifference() {\n    cube([120, 60, 20]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=20+2, d=8, $fn=30);\n    translate([60.0, 30.0, 18])\n        cylinder(h=2+1, d1=8, d2=11.5, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 120×60×8 with counterbore pattern: 1 holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate center: 120x60x8mm, Ø5 counterbore Ø20 4mm deep\ndifference() {\n    cube([120, 60, 8]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=8+2, d=5, $fn=30);\n    translate([60.0, 30.0, 4])\n        cylinder(h=4+1, d=20, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate 170×90×20 با سوراخ‌های پلکانی: قطر 4 و bore 16"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate center: 170x90x20mm, Ø4 counterbore Ø16 3mm deep\ndifference() {\n    cube([170, 90, 20]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=20+2, d=4, $fn=30);\n    translate([85.0, 45.0, 17])\n        cylinder(h=3+1, d=16, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 170×90 ضخامت 12 با 4 سوراخ counterbore"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate linear: 170x90x12mm, 4 holes Ø4 counterbore Ø16\ndifference() {\n    cube([170, 90, 12]);\n    translate([11.0, 45.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([11.0, 45.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([60.3, 45.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([60.3, 45.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([109.7, 45.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([109.7, 45.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([159.0, 45.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([159.0, 45.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Counterbore plate 80×40×10: 4 holes Ø6 with Ø12 bore"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate 2x2 grid: 80x40x10mm, 4 holes Ø6 counterbore Ø12\ndifference() {\n    cube([80, 40, 10]);\n    translate([26.7, 13.3, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([26.7, 13.3, 7])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([53.3, 13.3, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([53.3, 13.3, 7])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([26.7, 26.7, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([26.7, 26.7, 7])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([53.3, 26.7, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([53.3, 26.7, 7])\n        cylinder(h=3+1, d=12, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 250×120×20 plate with 4 counterbore holes Ø5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate 2x2 grid: 250x120x20mm, 4 holes Ø5 counterbore Ø14\ndifference() {\n    cube([250, 120, 20]);\n    translate([83.3, 40.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([83.3, 40.0, 15])\n        cylinder(h=5+1, d=14, $fn=24);\n    translate([166.7, 40.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([166.7, 40.0, 15])\n        cylinder(h=5+1, d=14, $fn=24);\n    translate([83.3, 80.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([83.3, 80.0, 15])\n        cylinder(h=5+1, d=14, $fn=24);\n    translate([166.7, 80.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([166.7, 80.0, 15])\n        cylinder(h=5+1, d=14, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×12mm plate featuring 4 counterbore-style holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate 2x2 grid: 250x120x12mm, 4 holes Ø5 counterbore Ø16\ndifference() {\n    cube([250, 120, 12]);\n    translate([83.3, 40.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([83.3, 40.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([166.7, 40.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([166.7, 40.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([83.3, 80.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([83.3, 80.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([166.7, 80.0, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([166.7, 80.0, 9])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 80×40×10mm plate featuring 5 countersink holes Ø5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate linear: 80x40x10mm, 5 holes Ø5 with 90° countersink\ndifference() {\n    cube([80, 40, 10]);\n    translate([7.5, 20.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([7.5, 20.0, 8])\n        cylinder(h=2+1, d1=5, d2=9.0, $fn=24);\n    translate([23.8, 20.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([23.8, 20.0, 8])\n        cylinder(h=2+1, d1=5, d2=9.0, $fn=24);\n    translate([40.0, 20.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([40.0, 20.0, 8])\n        cylinder(h=2+1, d1=5, d2=9.0, $fn=24);\n    translate([56.2, 20.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([56.2, 20.0, 8])\n        cylinder(h=2+1, d1=5, d2=9.0, $fn=24);\n    translate([72.5, 20.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([72.5, 20.0, 8])\n        cylinder(h=2+1, d1=5, d2=9.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 170×90×20 با سوراخ‌های counterbore در گوشه‌ها و سوراخ مرکزی ساده"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed counterbore: 170x90x20mm, center Ø8 + 4 corner counterbore Ø12\ndifference() {\n    cube([170, 90, 20]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=20+2, d=8, $fn=30);\n    translate([10.0, 10.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([10.0, 10.0, 17])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([160.0, 10.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([160.0, 10.0, 17])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([10.0, 80.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([10.0, 80.0, 17])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([160.0, 80.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([160.0, 80.0, 17])\n        cylinder(h=3+1, d=12, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate 120×60×8 با سوراخ‌های countersink زاویه 90°"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate 2x2: 120x60x8mm, 4 holes Ø5 with 90° countersink\ndifference() {\n    cube([120, 60, 8]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=8+2, d=5, $fn=24);\n    translate([40.0, 20.0, 5])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([80.0, 20.0, -1])\n        cylinder(h=8+2, d=5, $fn=24);\n    translate([80.0, 20.0, 5])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([40.0, 40.0, -1])\n        cylinder(h=8+2, d=5, $fn=24);\n    translate([40.0, 40.0, 5])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([80.0, 40.0, -1])\n        cylinder(h=8+2, d=5, $fn=24);\n    translate([80.0, 40.0, 5])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×20mm plate featuring 3 counterbore-style holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate linear: 250x120x20mm, 3 holes Ø6 counterbore Ø16\ndifference() {\n    cube([250, 120, 20]);\n    translate([11.0, 60.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([11.0, 60.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([125.0, 60.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([125.0, 60.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([239.0, 60.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([239.0, 60.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 120×60×10 بساز با سوراخ‌های مخروطی countersink"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate linear: 120x60x10mm, 4 holes Ø5 with 60° countersink\ndifference() {\n    cube([120, 60, 10]);\n    translate([6.7, 30.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([6.7, 30.0, 8])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([42.2, 30.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([42.2, 30.0, 8])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([77.8, 30.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([77.8, 30.0, 8])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([113.4, 30.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([113.4, 30.0, 8])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Countersink plate 120×60×12: 4 holes Ø10 with 60° taper"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate corners: 120x60x12mm, 4 holes Ø10 with 60° countersink\ndifference() {\n    cube([120, 60, 12]);\n    translate([10.15, 10.15, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([10.15, 10.15, 10])\n        cylinder(h=2+1, d1=10, d2=12.3, $fn=24);\n    translate([109.85, 10.15, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([109.85, 10.15, 10])\n        cylinder(h=2+1, d1=10, d2=12.3, $fn=24);\n    translate([10.15, 49.85, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([10.15, 49.85, 10])\n        cylinder(h=2+1, d1=10, d2=12.3, $fn=24);\n    translate([109.85, 49.85, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([109.85, 49.85, 10])\n        cylinder(h=2+1, d1=10, d2=12.3, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 80×40 ضخامت 20 با 4 سوراخ countersink زاویه 100 درجه"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate corners: 80x40x20mm, 4 holes Ø10 with 100° countersink\ndifference() {\n    cube([80, 40, 20]);\n    translate([13.75, 13.75, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([13.75, 13.75, 16])\n        cylinder(h=4+1, d1=10, d2=19.5, $fn=24);\n    translate([66.25, 13.75, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([66.25, 13.75, 16])\n        cylinder(h=4+1, d1=10, d2=19.5, $fn=24);\n    translate([13.75, 26.25, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([13.75, 26.25, 16])\n        cylinder(h=4+1, d1=10, d2=19.5, $fn=24);\n    translate([66.25, 26.25, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([66.25, 26.25, 16])\n        cylinder(h=4+1, d1=10, d2=19.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 170×90×12 با سوراخ‌های countersink در گوشه‌ها و سوراخ مرکزی ساده"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed countersink: 170x90x12mm, center Ø5 + 4 corner countersink 60°\ndifference() {\n    cube([170, 90, 12]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=12+2, d=5, $fn=30);\n    translate([7.65, 7.65, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([7.65, 7.65, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([162.35, 7.65, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([162.35, 7.65, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([7.65, 82.35, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([7.65, 82.35, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n    translate([162.35, 82.35, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([162.35, 82.35, 10])\n        cylinder(h=2+1, d1=5, d2=7.3, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 80×40×15mm plate featuring 4 counterbore-style holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate corners: 80x40x15mm, 4 holes Ø5 counterbore Ø16 3mm deep\ndifference() {\n    cube([80, 40, 15]);\n    translate([12.0, 12.0, -1])\n        cylinder(h=15+2, d=5, $fn=24);\n    translate([12.0, 12.0, 12])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([68.0, 12.0, -1])\n        cylinder(h=15+2, d=5, $fn=24);\n    translate([68.0, 12.0, 12])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([12.0, 28.0, -1])\n        cylinder(h=15+2, d=5, $fn=24);\n    translate([12.0, 28.0, 12])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([68.0, 28.0, -1])\n        cylinder(h=15+2, d=5, $fn=24);\n    translate([68.0, 28.0, 12])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 170×90×12 با سوراخ‌های countersink در گوشه‌ها و سوراخ مرکزی ساده"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed countersink: 170x90x12mm, center Ø5 + 4 corner countersink 90°\ndifference() {\n    cube([170, 90, 12]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=12+2, d=5, $fn=30);\n    translate([9.5, 9.5, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([9.5, 9.5, 9])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([160.5, 9.5, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([160.5, 9.5, 9])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([9.5, 80.5, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([9.5, 80.5, 9])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n    translate([160.5, 80.5, -1])\n        cylinder(h=12+2, d=5, $fn=24);\n    translate([160.5, 80.5, 9])\n        cylinder(h=3+1, d1=5, d2=11.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 170×90×20 با سوراخ‌های counterbore در گوشه‌ها و سوراخ مرکزی ساده"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed counterbore: 170x90x20mm, center Ø8 + 4 corner counterbore Ø16\ndifference() {\n    cube([170, 90, 20]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=20+2, d=8, $fn=30);\n    translate([12.0, 12.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([12.0, 12.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([158.0, 12.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([158.0, 12.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([12.0, 78.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([12.0, 78.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([158.0, 78.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([158.0, 78.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه 120×60 ضخامت 10 با 1 سوراخ counterbore قطر 4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate center: 120x60x10mm, Ø4 counterbore Ø10 5mm deep\ndifference() {\n    cube([120, 60, 10]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=10+2, d=4, $fn=30);\n    translate([60.0, 30.0, 5])\n        cylinder(h=5+1, d=10, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×10mm plate featuring 1 countersink holes Ø5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate center: 250x120x10mm, Ø5 with 82° countersink\ndifference() {\n    cube([250, 120, 10]);\n    translate([125.0, 60.0, -1])\n        cylinder(h=10+2, d=5, $fn=30);\n    translate([125.0, 60.0, 8])\n        cylinder(h=2+1, d1=5, d2=8.5, $fn=30);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 250×120×8 with 4 counterbore holes: through Ø10, bore Ø12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate corners: 250x120x8mm, 4 holes Ø10 counterbore Ø12 3mm deep\ndifference() {\n    cube([250, 120, 8]);\n    translate([10.0, 10.0, -1])\n        cylinder(h=8+2, d=10, $fn=24);\n    translate([10.0, 10.0, 5])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([240.0, 10.0, -1])\n        cylinder(h=8+2, d=10, $fn=24);\n    translate([240.0, 10.0, 5])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([10.0, 110.0, -1])\n        cylinder(h=8+2, d=10, $fn=24);\n    translate([10.0, 110.0, 5])\n        cylinder(h=3+1, d=12, $fn=24);\n    translate([240.0, 110.0, -1])\n        cylinder(h=8+2, d=10, $fn=24);\n    translate([240.0, 110.0, 5])\n        cylinder(h=3+1, d=12, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه 250×120×20 با سوراخ‌های دو مرحله‌ای counterbore"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate corners: 250x120x20mm, 4 holes Ø5 counterbore Ø8 6mm deep\ndifference() {\n    cube([250, 120, 20]);\n    translate([8.0, 8.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([8.0, 8.0, 14])\n        cylinder(h=6+1, d=8, $fn=24);\n    translate([242.0, 8.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([242.0, 8.0, 14])\n        cylinder(h=6+1, d=8, $fn=24);\n    translate([8.0, 112.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([8.0, 112.0, 14])\n        cylinder(h=6+1, d=8, $fn=24);\n    translate([242.0, 112.0, -1])\n        cylinder(h=20+2, d=5, $fn=24);\n    translate([242.0, 112.0, 14])\n        cylinder(h=6+1, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 120×60 ضخامت 20 با 5 سوراخ counterbore"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate linear: 120x60x20mm, 5 holes Ø10 counterbore Ø16\ndifference() {\n    cube([120, 60, 20]);\n    translate([11.0, 30.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([11.0, 30.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([35.5, 30.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([35.5, 30.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([60.0, 30.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([60.0, 30.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([84.5, 30.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([84.5, 30.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n    translate([109.0, 30.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([109.0, 30.0, 17])\n        cylinder(h=3+1, d=16, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 120×60×10 with countersink pattern: 4 holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate corners: 120x60x10mm, 4 holes Ø5 with 82° countersink\ndifference() {\n    cube([120, 60, 10]);\n    translate([8.25, 8.25, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([8.25, 8.25, 8])\n        cylinder(h=2+1, d1=5, d2=8.5, $fn=24);\n    translate([111.75, 8.25, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([111.75, 8.25, 8])\n        cylinder(h=2+1, d1=5, d2=8.5, $fn=24);\n    translate([8.25, 51.75, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([8.25, 51.75, 8])\n        cylinder(h=2+1, d1=5, d2=8.5, $fn=24);\n    translate([111.75, 51.75, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([111.75, 51.75, 8])\n        cylinder(h=2+1, d1=5, d2=8.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×20mm plate featuring 4 countersink holes Ø10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate linear: 250x120x20mm, 4 holes Ø10 with 100° countersink\ndifference() {\n    cube([250, 120, 20]);\n    translate([11.6, 60.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([11.6, 60.0, 17])\n        cylinder(h=3+1, d1=10, d2=17.2, $fn=24);\n    translate([87.2, 60.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([87.2, 60.0, 17])\n        cylinder(h=3+1, d1=10, d2=17.2, $fn=24);\n    translate([162.8, 60.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([162.8, 60.0, 17])\n        cylinder(h=3+1, d1=10, d2=17.2, $fn=24);\n    translate([238.4, 60.0, -1])\n        cylinder(h=20+2, d=10, $fn=24);\n    translate([238.4, 60.0, 17])\n        cylinder(h=3+1, d1=10, d2=17.2, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a 80×40×8 plate with 4 counterbore holes Ø4mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Counterbore plate corners: 80x40x8mm, 4 holes Ø4 counterbore Ø10 6mm deep\ndifference() {\n    cube([80, 40, 8]);\n    translate([9.0, 9.0, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([9.0, 9.0, 2])\n        cylinder(h=6+1, d=10, $fn=24);\n    translate([71.0, 9.0, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([71.0, 9.0, 2])\n        cylinder(h=6+1, d=10, $fn=24);\n    translate([9.0, 31.0, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([9.0, 31.0, 2])\n        cylinder(h=6+1, d=10, $fn=24);\n    translate([71.0, 31.0, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([71.0, 31.0, 2])\n        cylinder(h=6+1, d=10, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Countersink plate 250×120×12: 4 holes Ø10 with 82° taper"
+      },
+      {
+        "role": "assistant",
+        "content": "// Countersink plate corners: 250x120x12mm, 4 holes Ø10 with 82° countersink\ndifference() {\n    cube([250, 120, 12]);\n    translate([11.6, 11.6, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([11.6, 11.6, 9])\n        cylinder(h=3+1, d1=10, d2=15.2, $fn=24);\n    translate([238.4, 11.6, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([238.4, 11.6, 9])\n        cylinder(h=3+1, d1=10, d2=15.2, $fn=24);\n    translate([11.6, 108.4, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([11.6, 108.4, 9])\n        cylinder(h=3+1, d1=10, d2=15.2, $fn=24);\n    translate([238.4, 108.4, -1])\n        cylinder(h=12+2, d=10, $fn=24);\n    translate([238.4, 108.4, 9])\n        cylinder(h=3+1, d1=10, d2=15.2, $fn=24);\n}"
+      }
+    ]
+  }
+]
