@@ -1,0 +1,1202 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 100 ضخامت 5 با 10 سوراخ روی BCD 70 قطر 6.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø100mm, 5mm thick, 10 holes Ø6.5 on BCD 70mm\ndifference() {\n    cylinder(h=5, r=50.0, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([28.316, 20.572, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([10.816, 33.287, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([-10.816, 33.287, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([-28.316, 20.572, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([-28.316, -20.572, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([-10.816, -33.287, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([10.816, -33.287, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n    translate([28.316, -20.572, -1])\n        cylinder(h=5+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a plate 80×40×4mm with a single hole Ø5mm at offset (29.29,2.35)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 80x40x4mm, Ø5 at (29.29,2.35)\ndifference() {\n    cube([80, 40, 4]);\n    translate([69.29, 22.35, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 80x40mm, 6mm thick, 4 corner-mount holes Ø6"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 80x40x6mm, Ø6mm\ndifference() {\n    cube([80, 40, 6]);\n    translate([6.0, 6.0, -1])\n        cylinder(h=6+2, r=3.0, $fn=24);\n    translate([74.0, 6.0, -1])\n        cylinder(h=6+2, r=3.0, $fn=24);\n    translate([6.0, 34.0, -1])\n        cylinder(h=6+2, r=3.0, $fn=24);\n    translate([74.0, 34.0, -1])\n        cylinder(h=6+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت قطعه پلکانی با پایه 250×120 ضخامت 8 و بخش بالا 30×30 ضخامت 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped rectangular part: base 250x120x8mm, step 30x30x3mm\ncube([250, 120, 8]);\ntranslate([110.0, 45.0, 8])\n    cube([30, 30, 3]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate 170×90×15 بساز با 4 سوراخ 2 به صورت شبکه‌ای 2×2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 170x90x15mm, Ø2mm\ndifference() {\n    cube([170, 90, 15]);\n    translate([56.67, 30.0, -1])\n        cylinder(h=15+2, r=1.0, $fn=24);\n    translate([56.67, 60.0, -1])\n        cylinder(h=15+2, r=1.0, $fn=24);\n    translate([113.33, 30.0, -1])\n        cylinder(h=15+2, r=1.0, $fn=24);\n    translate([113.33, 60.0, -1])\n        cylinder(h=15+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک با سوراخ مرکزی: قطر 200 ضخامت 4 سوراخ 2.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Circular disk with center bore: Ø200mm, 4mm thick, bore Ø2.5mm\ndifference() {\n    cylinder(h=4, r=100.0, $fn=40);\n    translate([0, 0, -1])\n        cylinder(h=4+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate مستطیلی 120x60 ضخامت 15"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 120x60mm, thickness 15mm\ncube([120, 60, 15]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A rectangular plate 80×40×12 with one hole Ø5 at x=-25.11 y=-3.81"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 80x40x12mm, Ø5 at (-25.11,-3.81)\ndifference() {\n    cube([80, 40, 12]);\n    translate([14.89, 16.19, -1])\n        cylinder(h=12+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 250 در 120 ضخامت 8 دو سوراخ 2 در نقاط مختلف"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 250x120x8mm, Ø2mm\ndifference() {\n    cube([250, 120, 8]);\n    translate([62.5, 60.0, -1])\n        cylinder(h=8+2, r=1.0, $fn=24);\n    translate([187.5, 60.0, -1])\n        cylinder(h=8+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 40×20 ضخامت 4 با آرایه 2×2 سوراخ قطر 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 40x20x4mm, Ø3mm\ndifference() {\n    cube([40, 20, 4]);\n    translate([13.33, 6.67, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n    translate([13.33, 13.33, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n    translate([26.67, 6.67, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n    translate([26.67, 13.33, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 120 ضخامت 2 با 8 سوراخ روی BCD 90 قطر 12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø120mm, 2mm thick, 8 holes Ø12 on BCD 90mm\ndifference() {\n    cylinder(h=2, r=60.0, $fn=40);\n    translate([45.0, 0.0, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([31.82, 31.82, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([0.0, 45.0, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([-31.82, 31.82, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([-45.0, 0.0, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([-31.82, -31.82, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([-0.0, -45.0, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n    translate([31.82, -31.82, -1])\n        cylinder(h=2+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate به ابعاد 250 در 120 ضخامت 3 با سوراخ غیر مرکزی قطر 6.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 250x120x3mm, Ø6.5 at (-66.81,-32.74)\ndifference() {\n    cube([250, 120, 3]);\n    translate([58.19, 27.26, -1])\n        cylinder(h=3+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک توپر دایره‌ای Ø100×12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid circular disk: Ø100mm, thickness 12mm\ncylinder(h=12, r=50.0, $fn=40);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 250×120 ضخامت 6 با آرایش 2 در 2 سوراخ 12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 250x120x6mm, Ø12mm\ndifference() {\n    cube([250, 120, 6]);\n    translate([83.33, 40.0, -1])\n        cylinder(h=6+2, r=6.0, $fn=24);\n    translate([83.33, 80.0, -1])\n        cylinder(h=6+2, r=6.0, $fn=24);\n    translate([166.67, 40.0, -1])\n        cylinder(h=6+2, r=6.0, $fn=24);\n    translate([166.67, 80.0, -1])\n        cylinder(h=6+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 120×60 ضخامت 20 با سوراخ مرکزی 4 و چهار سوراخ گوشه 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 120x60x20mm, center bore Ø4 + 4 corner holes Ø3\ndifference() {\n    cube([120, 60, 20]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([4.5, 4.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([115.5, 4.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([4.5, 55.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([115.5, 55.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت بلوک تخت مستطیلی 120×60 با ارتفاع 15"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 120x60mm, thickness 15mm\ncube([120, 60, 15]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flat rectangular plate 80x40, 6mm, single off-center hole Ø6 at (8.41,-4.61)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 80x40x6mm, Ø6 at (8.41,-4.61)\ndifference() {\n    cube([80, 40, 6]);\n    translate([48.41, 15.39, -1])\n        cylinder(h=6+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 40×20×20 with center hole and surrounding bolt pattern"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 40x20x20mm, center bore Ø8 + 8 surrounding holes Ø4\ndifference() {\n    cube([40, 20, 20]);\n    translate([20.0, 10.0, -1])\n        cylinder(h=20+2, r=4.0, $fn=24);\n    translate([26.0, 10.0, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([24.243, 14.243, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([20.0, 16.0, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([15.757, 14.243, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([14.0, 10.0, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([15.757, 5.757, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([20.0, 4.0, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n    translate([24.243, 5.757, -1])\n        cylinder(h=20+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A flat plate 120×60×15mm with one centered hole of diameter 5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 120x60x15mm, bore Ø5mm\ndifference() {\n    cube([120, 60, 15]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 250×120 ضخامت 5 با سوراخ مرکزی و mounting در گوشه‌ها"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 250x120x5mm, center bore Ø6 + 4 corner holes Ø5\ndifference() {\n    cube([250, 120, 5]);\n    translate([125.0, 60.0, -1])\n        cylinder(h=5+2, r=3.0, $fn=24);\n    translate([5.5, 5.5, -1])\n        cylinder(h=5+2, r=2.5, $fn=24);\n    translate([244.5, 5.5, -1])\n        cylinder(h=5+2, r=2.5, $fn=24);\n    translate([5.5, 114.5, -1])\n        cylinder(h=5+2, r=2.5, $fn=24);\n    translate([244.5, 114.5, -1])\n        cylinder(h=5+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø100mm, 12mm thick, 8 holes Ø4 on BCD 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø100mm, 12mm thick, 8 holes Ø4 on BCD 70mm\ndifference() {\n    cylinder(h=12, r=50.0, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([24.749, 24.749, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([0.0, 35.0, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([-24.749, 24.749, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([-24.749, -24.749, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n    translate([24.749, -24.749, -1])\n        cylinder(h=12+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه مستطیلی 250×120×4 با 10 سوراخ پیچ روی BCD 70 قطر 3.2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with bolt circle: 250x120x4mm, 10 holes Ø3.2 on BCD 70\ndifference() {\n    cube([250, 120, 4]);\n    translate([160.0, 60.0, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([153.316, 80.572, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([135.816, 93.287, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([114.184, 93.287, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([96.684, 80.572, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([90.0, 60.0, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([96.684, 39.428, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([114.184, 26.713, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([135.816, 26.713, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n    translate([153.316, 39.428, -1])\n        cylinder(h=4+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Two-hole rectangular plate 250×120×5, holes Ø10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 250x120x5mm, Ø10mm\ndifference() {\n    cube([250, 120, 5]);\n    translate([62.5, 60.0, -1])\n        cylinder(h=5+2, r=5.0, $fn=24);\n    translate([187.5, 60.0, -1])\n        cylinder(h=5+2, r=5.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 120×60, thickness 10, with centered bore Ø6mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 120x60x10mm, bore Ø6mm\ndifference() {\n    cube([120, 60, 10]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=10+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flat plate 40×20×15 with a pair of Ø3 holes at specified locations"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 40x20x15mm, Ø3mm\ndifference() {\n    cube([40, 20, 15]);\n    translate([10.0, 10.0, -1])\n        cylinder(h=15+2, r=1.5, $fn=24);\n    translate([30.0, 10.0, -1])\n        cylinder(h=15+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 80×40 ضخامت 3 با سوراخ مرکزی و چند سوراخ اطراف"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 80x40x3mm, center bore Ø6 + 6 surrounding holes Ø5\ndifference() {\n    cube([80, 40, 3]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=3+2, r=3.0, $fn=24);\n    translate([52.0, 20.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n    translate([46.0, 30.392, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n    translate([34.0, 30.392, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n    translate([28.0, 20.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n    translate([34.0, 9.608, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n    translate([46.0, 9.608, -1])\n        cylinder(h=3+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه 170×90×4 با 3 سوراخ پشت سر هم قطر 2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 3 linear holes: 170x90x4mm, Ø2mm\ndifference() {\n    cube([170, 90, 4]);\n    translate([5.0, 45.0, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n    translate([85.0, 45.0, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n    translate([165.0, 45.0, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه مستطیلی ساده بدون سوراخ 170x90x8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 170x90mm, thickness 8mm\ncube([170, 90, 8]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک گرد قطر 120 ضخامت 4 سوراخ‌های غیرمتمرکز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø120mm, 4mm thick, irregular placement\ndifference() {\n    cylinder(h=4, r=60.0, $fn=40);\n    translate([34.97, 12.13, -1])\n        cylinder(h=4+2, r=6.0, $fn=24);\n    translate([0.28, -11.99, -1])\n        cylinder(h=4+2, r=6.0, $fn=24);\n    translate([-30.09, 0.67, -1])\n        cylinder(h=4+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 80×40 ضخامت 3 با شیار مستطیلی در وسط"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with slot: 80x40x3mm, slot 10x25mm\ndifference() {\n    cube([80, 40, 3]);\n    translate([40.0, 12.5, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([40.0, 27.5, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([35.0, 12.5, -1])\n        cube([10, 15, 3+2]);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه مستطیلی ساده بدون سوراخ 120x60x5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 120x60mm, thickness 5mm\ncube([120, 60, 5]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک با سوراخ مرکزی: قطر 150 ضخامت 8 سوراخ 4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Circular disk with center bore: Ø150mm, 8mm thick, bore Ø4mm\ndifference() {\n    cylinder(h=8, r=75.0, $fn=40);\n    translate([0, 0, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A flat plate 170×90×4 with holes at all four corners, Ø6.5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 170x90x4mm, Ø6.5mm\ndifference() {\n    cube([170, 90, 4]);\n    translate([6.25, 6.25, -1])\n        cylinder(h=4+2, r=3.25, $fn=24);\n    translate([163.75, 6.25, -1])\n        cylinder(h=4+2, r=3.25, $fn=24);\n    translate([6.25, 83.75, -1])\n        cylinder(h=4+2, r=3.25, $fn=24);\n    translate([163.75, 83.75, -1])\n        cylinder(h=4+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Corner-hole rectangular plate: 120×60, 12mm thick, Ø12 holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 120x60x12mm, Ø12mm\ndifference() {\n    cube([120, 60, 12]);\n    translate([9.0, 9.0, -1])\n        cylinder(h=12+2, r=6.0, $fn=24);\n    translate([111.0, 9.0, -1])\n        cylinder(h=12+2, r=6.0, $fn=24);\n    translate([9.0, 51.0, -1])\n        cylinder(h=12+2, r=6.0, $fn=24);\n    translate([111.0, 51.0, -1])\n        cylinder(h=12+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Build a plain rectangular plate 170x90x4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 170x90mm, thickness 4mm\ncube([170, 90, 4]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flat plate 120x60mm, 6mm thick, with 2x2 symmetric hole pattern Ø4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 120x60x6mm, Ø4mm\ndifference() {\n    cube([120, 60, 6]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=6+2, r=2.0, $fn=24);\n    translate([40.0, 40.0, -1])\n        cylinder(h=6+2, r=2.0, $fn=24);\n    translate([80.0, 20.0, -1])\n        cylinder(h=6+2, r=2.0, $fn=24);\n    translate([80.0, 40.0, -1])\n        cylinder(h=6+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a stepped rectangular part: base 120×60×8mm, upper 40×15×5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped rectangular part: base 120x60x8mm, step 40x15x5mm\ncube([120, 60, 8]);\ntranslate([40.0, 22.5, 8])\n    cube([40, 15, 5]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 170×90 ضخامت 15 با سوراخ‌های پلکانی (counterbore)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Plate with counterbore holes: 170x90x15mm, 4 holes Ø4 with Ø7 counterbore 5mm deep\ndifference() {\n    cube([170, 90, 15]);\n    translate([7.5, 7.5, -1])\n        cylinder(h=15+2, r=2.0, $fn=24);\n    translate([7.5, 7.5, 10])\n        cylinder(h=5+1, r=3.5, $fn=24);\n    translate([162.5, 7.5, -1])\n        cylinder(h=15+2, r=2.0, $fn=24);\n    translate([162.5, 7.5, 10])\n        cylinder(h=5+1, r=3.5, $fn=24);\n    translate([7.5, 82.5, -1])\n        cylinder(h=15+2, r=2.0, $fn=24);\n    translate([7.5, 82.5, 10])\n        cylinder(h=5+1, r=3.5, $fn=24);\n    translate([162.5, 82.5, -1])\n        cylinder(h=15+2, r=2.0, $fn=24);\n    translate([162.5, 82.5, 10])\n        cylinder(h=5+1, r=3.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 80×40 ضخامت 8 با چهار سوراخ گوشه قطر 6.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 80x40x8mm, Ø6.5mm\ndifference() {\n    cube([80, 40, 8]);\n    translate([6.25, 6.25, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([73.75, 6.25, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([6.25, 33.75, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([73.75, 33.75, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A rectangular plate 120×60×15 with stepped/counterbore holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Plate with counterbore holes: 120x60x15mm, 6 holes Ø5 with Ø9 counterbore 4mm deep\ndifference() {\n    cube([120, 60, 15]);\n    translate([78.0, 30.0, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([78.0, 30.0, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n    translate([69.0, 45.588, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([69.0, 45.588, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n    translate([51.0, 45.588, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([51.0, 45.588, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n    translate([42.0, 30.0, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([42.0, 30.0, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n    translate([51.0, 14.412, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([51.0, 14.412, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n    translate([69.0, 14.412, -1])\n        cylinder(h=15+2, r=2.5, $fn=24);\n    translate([69.0, 14.412, 11])\n        cylinder(h=4+1, r=4.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 80 ضخامت 20 با سوراخ‌های نامتقارن"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø80mm, 20mm thick, irregular placement\ndifference() {\n    cylinder(h=20, r=40.0, $fn=40);\n    translate([32.42, 2.09, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([14.26, -2.61, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([-13.99, 25.91, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([5.46, 27.26, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 40×20×3 with 3x3 hole grid, Ø2.5mm each"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 3x3 hole array: 40x20x3mm, Ø2.5mm\ndifference() {\n    cube([40, 20, 3]);\n    translate([10.0, 5.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([10.0, 10.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([10.0, 15.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([20.0, 5.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([20.0, 10.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([20.0, 15.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([30.0, 5.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([30.0, 10.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([30.0, 15.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A rectangular plate 120×60×5mm, center bore Ø5 plus 4 corner holes Ø4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 120x60x5mm, center bore Ø5 + 4 corner holes Ø4\ndifference() {\n    cube([120, 60, 5]);\n    translate([60.0, 30.0, -1])\n        cylinder(h=5+2, r=2.5, $fn=24);\n    translate([5.0, 5.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=24);\n    translate([115.0, 5.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=24);\n    translate([5.0, 55.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=24);\n    translate([115.0, 55.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 40×20×15mm rectangular plate with two through-holes Ø3mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 40x20x15mm, Ø3mm\ndifference() {\n    cube([40, 20, 15]);\n    translate([10.0, 10.0, -1])\n        cylinder(h=15+2, r=1.5, $fn=24);\n    translate([30.0, 10.0, -1])\n        cylinder(h=15+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک دایره‌ای قطر 100 ضخامت 15 بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid circular disk: Ø100mm, thickness 15mm\ncylinder(h=15, r=50.0, $fn=40);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 170x90mm thick 20mm, offset hole Ø2.5 at x=-27.27, y=12.45"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 170x90x20mm, Ø2.5 at (-27.27,12.45)\ndifference() {\n    cube([170, 90, 20]);\n    translate([57.73, 57.45, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 250×120×5 with central hole Ø6"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 250x120x5mm, bore Ø6mm\ndifference() {\n    cube([250, 120, 5]);\n    translate([125.0, 60.0, -1])\n        cylinder(h=5+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate مستطیلی ابعاد 40×20 ضخامت 8 با سوراخ مرکزی 12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 40x20x8mm, bore Ø12mm\ndifference() {\n    cube([40, 20, 8]);\n    translate([20.0, 10.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate 80×40×20 بساز با 4 سوراخ 2.5 به صورت شبکه‌ای 2×2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 80x40x20mm, Ø2.5mm\ndifference() {\n    cube([80, 40, 20]);\n    translate([26.67, 13.33, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([26.67, 26.67, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([53.33, 13.33, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n    translate([53.33, 26.67, -1])\n        cylinder(h=20+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک قطعه پلکانی مستطیلی بساز: پایه 250×120×8 و مرحله بالا 30×15×5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped rectangular part: base 250x120x8mm, step 30x15x5mm\ncube([250, 120, 8]);\ntranslate([110.0, 52.5, 8])\n    cube([30, 15, 5]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×20 plate, 4 holes in a straight line, Ø3.2mm each"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 4 linear holes: 250x120x20mm, Ø3.2mm\ndifference() {\n    cube([250, 120, 20]);\n    translate([6.2, 60.0, -1])\n        cylinder(h=20+2, r=1.6, $fn=24);\n    translate([85.4, 60.0, -1])\n        cylinder(h=20+2, r=1.6, $fn=24);\n    translate([164.6, 60.0, -1])\n        cylinder(h=20+2, r=1.6, $fn=24);\n    translate([243.8, 60.0, -1])\n        cylinder(h=20+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 250×120 ضخامت 4 با دو سوراخ قطر 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 250x120x4mm, Ø3mm\ndifference() {\n    cube([250, 120, 4]);\n    translate([62.5, 60.0, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n    translate([187.5, 60.0, -1])\n        cylinder(h=4+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 80×40×4 with center hole and surrounding bolt pattern"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 80x40x4mm, center bore Ø5 + 8 surrounding holes Ø5\ndifference() {\n    cube([80, 40, 4]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([52.0, 20.0, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([48.485, 28.485, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([40.0, 32.0, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([31.515, 28.485, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([28.0, 20.0, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([31.515, 11.515, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([40.0, 8.0, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n    translate([48.485, 11.515, -1])\n        cylinder(h=4+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a plate 170×90×2 with elongated slot holes at center"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with slot: 170x90x2mm, slot 10x15mm\ndifference() {\n    cube([170, 90, 2]);\n    translate([85.0, 42.5, -1])\n        cylinder(h=2+2, r=5.0, $fn=24);\n    translate([85.0, 47.5, -1])\n        cylinder(h=2+2, r=5.0, $fn=24);\n    translate([80.0, 42.5, -1])\n        cube([10, 5, 2+2]);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Disk Ø80×20 with 5 bolt holes Ø2 on BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø80mm, 20mm thick, 5 holes Ø2 on BCD 50mm\ndifference() {\n    cylinder(h=20, r=40.0, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=20+2, r=1.0, $fn=24);\n    translate([7.725, 23.776, -1])\n        cylinder(h=20+2, r=1.0, $fn=24);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=20+2, r=1.0, $fn=24);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=20+2, r=1.0, $fn=24);\n    translate([7.725, -23.776, -1])\n        cylinder(h=20+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 170×90 ضخامت 20 با 9 سوراخ در آرایه 3 در 3 قطر 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 3x3 hole array: 170x90x20mm, Ø5mm\ndifference() {\n    cube([170, 90, 20]);\n    translate([42.5, 22.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([42.5, 45.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([42.5, 67.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([85.0, 22.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([85.0, 45.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([85.0, 67.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([127.5, 22.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([127.5, 45.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n    translate([127.5, 67.5, -1])\n        cylinder(h=20+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 150 ضخامت 3 با سوراخ‌های نامتقارن"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø150mm, 3mm thick, irregular placement\ndifference() {\n    cylinder(h=3, r=75.0, $fn=40);\n    translate([-28.31, 30.46, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([34.54, 10.89, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 170×90×6mm, bolt circle BCD 50mm, 5 holes Ø8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with bolt circle: 170x90x6mm, 5 holes Ø8 on BCD 50\ndifference() {\n    cube([170, 90, 6]);\n    translate([110.0, 45.0, -1])\n        cylinder(h=6+2, r=4.0, $fn=24);\n    translate([92.725, 68.776, -1])\n        cylinder(h=6+2, r=4.0, $fn=24);\n    translate([64.775, 59.695, -1])\n        cylinder(h=6+2, r=4.0, $fn=24);\n    translate([64.775, 30.305, -1])\n        cylinder(h=6+2, r=4.0, $fn=24);\n    translate([92.725, 21.224, -1])\n        cylinder(h=6+2, r=4.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid circular disk Ø200mm, 8mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid circular disk: Ø200mm, thickness 8mm\ncylinder(h=8, r=100.0, $fn=40);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø80mm, 10mm thick, with center bore Ø8mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Circular disk with center bore: Ø80mm, 10mm thick, bore Ø8mm\ndifference() {\n    cylinder(h=10, r=40.0, $fn=40);\n    translate([0, 0, -1])\n        cylinder(h=10+2, r=4.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×3 plate, 6 holes in a straight line, Ø2.5mm each"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 6 linear holes: 250x120x3mm, Ø2.5mm\ndifference() {\n    cube([250, 120, 3]);\n    translate([5.5, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([53.3, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([101.1, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([148.9, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([196.7, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n    translate([244.5, 60.0, -1])\n        cylinder(h=3+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 170×90, thickness 3, with centered bore Ø3mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 170x90x3mm, bore Ø3mm\ndifference() {\n    cube([170, 90, 3]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=3+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 80×40 ضخامت 15 با چهار سوراخ گوشه قطر 6"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 80x40x15mm, Ø6mm\ndifference() {\n    cube([80, 40, 15]);\n    translate([6.0, 6.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=24);\n    translate([74.0, 6.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=24);\n    translate([6.0, 34.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=24);\n    translate([74.0, 34.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 80×40 ضخامت 6 با سوراخ‌های کشیده (اسلات) در مرکز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with slot: 80x40x6mm, slot 10x25mm\ndifference() {\n    cube([80, 40, 6]);\n    translate([40.0, 12.5, -1])\n        cylinder(h=6+2, r=5.0, $fn=24);\n    translate([40.0, 27.5, -1])\n        cylinder(h=6+2, r=5.0, $fn=24);\n    translate([35.0, 12.5, -1])\n        cube([10, 15, 6+2]);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Disk Ø200×10 with 10 bolt holes Ø4 on BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø200mm, 10mm thick, 10 holes Ø4 on BCD 50mm\ndifference() {\n    cylinder(h=10, r=100.0, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([20.225, 14.695, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([7.725, 23.776, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([-7.725, 23.776, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([-7.725, -23.776, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([7.725, -23.776, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n    translate([20.225, -14.695, -1])\n        cylinder(h=10+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 170x90mm, 20mm thick, 4 corner-mount holes Ø3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 170x90x20mm, Ø3mm\ndifference() {\n    cube([170, 90, 20]);\n    translate([4.5, 4.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([165.5, 4.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([4.5, 85.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([165.5, 85.5, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه مستطیلی 80x40 ضخامت 20 با سوراخ‌های گوشه‌ای 6.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 80x40x20mm, Ø6.5mm\ndifference() {\n    cube([80, 40, 20]);\n    translate([6.25, 6.25, -1])\n        cylinder(h=20+2, r=3.25, $fn=24);\n    translate([73.75, 6.25, -1])\n        cylinder(h=20+2, r=3.25, $fn=24);\n    translate([6.25, 33.75, -1])\n        cylinder(h=20+2, r=3.25, $fn=24);\n    translate([73.75, 33.75, -1])\n        cylinder(h=20+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate به ابعاد 250 در 120 ضخامت 6 با سوراخ غیر مرکزی قطر 6.5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 250x120x6mm, Ø6.5 at (5.63,-6.88)\ndifference() {\n    cube([250, 120, 6]);\n    translate([130.63, 53.12, -1])\n        cylinder(h=6+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø80mm, 10mm thick, with center bore Ø12mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Circular disk with center bore: Ø80mm, 10mm thick, bore Ø12mm\ndifference() {\n    cylinder(h=10, r=40.0, $fn=40);\n    translate([0, 0, -1])\n        cylinder(h=10+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 40×20×6 with 4 equally spaced holes Ø2.5 along length"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 4 linear holes: 40x20x6mm, Ø2.5mm\ndifference() {\n    cube([40, 20, 6]);\n    translate([5.5, 10.0, -1])\n        cylinder(h=6+2, r=1.25, $fn=24);\n    translate([15.17, 10.0, -1])\n        cylinder(h=6+2, r=1.25, $fn=24);\n    translate([24.83, 10.0, -1])\n        cylinder(h=6+2, r=1.25, $fn=24);\n    translate([34.5, 10.0, -1])\n        cylinder(h=6+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Corner-hole rectangular plate: 80×40, 10mm thick, Ø10 holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 80x40x10mm, Ø10mm\ndifference() {\n    cube([80, 40, 10]);\n    translate([8.0, 8.0, -1])\n        cylinder(h=10+2, r=5.0, $fn=24);\n    translate([72.0, 8.0, -1])\n        cylinder(h=10+2, r=5.0, $fn=24);\n    translate([8.0, 32.0, -1])\n        cylinder(h=10+2, r=5.0, $fn=24);\n    translate([72.0, 32.0, -1])\n        cylinder(h=10+2, r=5.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø100mm, 3mm thick, 6 holes Ø10 on BCD 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with bolt circle: Ø100mm, 3mm thick, 6 holes Ø10 on BCD 70mm\ndifference() {\n    cylinder(h=3, r=50.0, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([17.5, 30.311, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([-17.5, 30.311, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([-17.5, -30.311, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([17.5, -30.311, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 120×60 ضخامت 10 با 4 سوراخ خطی قطر 3.2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 4 linear holes: 120x60x10mm, Ø3.2mm\ndifference() {\n    cube([120, 60, 10]);\n    translate([6.2, 30.0, -1])\n        cylinder(h=10+2, r=1.6, $fn=24);\n    translate([42.07, 30.0, -1])\n        cylinder(h=10+2, r=1.6, $fn=24);\n    translate([77.93, 30.0, -1])\n        cylinder(h=10+2, r=1.6, $fn=24);\n    translate([113.8, 30.0, -1])\n        cylinder(h=10+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Disk Ø100mm, 20mm thick, with off-center irregular holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø100mm, 20mm thick, irregular placement\ndifference() {\n    cylinder(h=20, r=50.0, $fn=40);\n    translate([-17.59, 34.16, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n    translate([27.27, 36.98, -1])\n        cylinder(h=20+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه مستطیلی 80×40 ضخامت 3 سوراخ 4 در موقعیت (-13.82,-10.93)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 80x40x3mm, Ø4 at (-13.82,-10.93)\ndifference() {\n    cube([80, 40, 3]);\n    translate([26.18, 9.07, -1])\n        cylinder(h=3+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate مستطیلی ابعاد 80×40 ضخامت 15 با سوراخ مرکزی 3.2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 80x40x15mm, bore Ø3.2mm\ndifference() {\n    cube([80, 40, 15]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=15+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid circular disk Ø80mm, 6mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid circular disk: Ø80mm, thickness 6mm\ncylinder(h=6, r=40.0, $fn=40);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a plate 120×60×2 with elongated slot holes at center"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with slot: 120x60x2mm, slot 8x20mm\ndifference() {\n    cube([120, 60, 2]);\n    translate([60.0, 24.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n    translate([60.0, 36.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n    translate([56.0, 24.0, -1])\n        cube([8, 12, 2+2]);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه 250×120 ضخامت 3 با دو سوراخ قطر 10"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 250x120x3mm, Ø10mm\ndifference() {\n    cube([250, 120, 3]);\n    translate([194.37, 69.6, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n    translate([20.7, 23.93, -1])\n        cylinder(h=3+2, r=5.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 170×90 ضخامت 2 با سوراخ مرکزی 6 و چهار سوراخ گوشه 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 170x90x2mm, center bore Ø6 + 4 corner holes Ø5\ndifference() {\n    cube([170, 90, 2]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=2+2, r=3.0, $fn=24);\n    translate([5.5, 5.5, -1])\n        cylinder(h=2+2, r=2.5, $fn=24);\n    translate([164.5, 5.5, -1])\n        cylinder(h=2+2, r=2.5, $fn=24);\n    translate([5.5, 84.5, -1])\n        cylinder(h=2+2, r=2.5, $fn=24);\n    translate([164.5, 84.5, -1])\n        cylinder(h=2+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 170×90×8 with central hole Ø5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 170x90x8mm, bore Ø5mm\ndifference() {\n    cube([170, 90, 8]);\n    translate([85.0, 45.0, -1])\n        cylinder(h=8+2, r=2.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate مستطیلی 250x120 ضخامت 20"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate: 250x120mm, thickness 20mm\ncube([250, 120, 20]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک دایره‌ای 120 میلی‌متر ضخامت 4 با سوراخ‌های پراکنده"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø120mm, 4mm thick, irregular placement\ndifference() {\n    cylinder(h=4, r=60.0, $fn=40);\n    translate([-29.33, 41.44, -1])\n        cylinder(h=4+2, r=2.0, $fn=24);\n    translate([-38.27, -7.43, -1])\n        cylinder(h=4+2, r=2.0, $fn=24);\n    translate([4.39, -38.94, -1])\n        cylinder(h=4+2, r=2.0, $fn=24);\n    translate([-38.42, 19.97, -1])\n        cylinder(h=4+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 80×40 ضخامت 2 با سوراخ مرکزی قطر 3.2"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 80x40x2mm, bore Ø3.2mm\ndifference() {\n    cube([80, 40, 2]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=2+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک پایه پلکانی مستطیلی: طبقه اول 120×60×8 طبقه دوم 20×30×3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped rectangular part: base 120x60x8mm, step 20x30x3mm\ncube([120, 60, 8]);\ntranslate([50.0, 15.0, 8])\n    cube([20, 30, 3]);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 170×90 ضخامت 8 با سوراخ‌های پلکانی (counterbore)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Plate with counterbore holes: 170x90x8mm, 6 holes Ø4 with Ø6 counterbore 4mm deep\ndifference() {\n    cube([170, 90, 8]);\n    translate([112.0, 45.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([112.0, 45.0, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n    translate([98.5, 68.383, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([98.5, 68.383, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n    translate([71.5, 68.383, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([71.5, 68.383, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n    translate([58.0, 45.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([58.0, 45.0, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n    translate([71.5, 21.617, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([71.5, 21.617, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n    translate([98.5, 21.617, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([98.5, 21.617, 4])\n        cylinder(h=4+1, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 120×60×2 plate, drill 4 holes Ø8 in a 2x2 pattern"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 2x2 hole array: 120x60x2mm, Ø8mm\ndifference() {\n    cube([120, 60, 2]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n    translate([40.0, 40.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n    translate([80.0, 20.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n    translate([80.0, 40.0, -1])\n        cylinder(h=2+2, r=4.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate 80×40×8 with center hole and surrounding bolt pattern"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 80x40x8mm, center bore Ø5 + 6 surrounding holes Ø4\ndifference() {\n    cube([80, 40, 8]);\n    translate([40.0, 20.0, -1])\n        cylinder(h=8+2, r=2.5, $fn=24);\n    translate([52.0, 20.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([46.0, 30.392, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([34.0, 30.392, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([28.0, 20.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([34.0, 9.608, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n    translate([46.0, 9.608, -1])\n        cylinder(h=8+2, r=2.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make a 250 by 120 plate, 3mm thick, drill a Ø3.2 hole at the center"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with center hole: 250x120x3mm, bore Ø3.2mm\ndifference() {\n    cube([250, 120, 3]);\n    translate([125.0, 60.0, -1])\n        cylinder(h=3+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک Plate مستطیلی 80×40 ضخامت 8 با 9 سوراخ 6.5 شبکه‌ای 3×3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with 3x3 hole array: 80x40x8mm, Ø6.5mm\ndifference() {\n    cube([80, 40, 8]);\n    translate([20.0, 10.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([20.0, 20.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([20.0, 30.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([40.0, 10.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([40.0, 20.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([40.0, 30.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([60.0, 10.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([60.0, 20.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n    translate([60.0, 30.0, -1])\n        cylinder(h=8+2, r=3.25, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×3 plate with 4 bolt holes Ø6 on BCD 90mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with bolt circle: 250x120x3mm, 4 holes Ø6 on BCD 90\ndifference() {\n    cube([250, 120, 3]);\n    translate([170.0, 60.0, -1])\n        cylinder(h=3+2, r=3.0, $fn=24);\n    translate([125.0, 105.0, -1])\n        cylinder(h=3+2, r=3.0, $fn=24);\n    translate([80.0, 60.0, -1])\n        cylinder(h=3+2, r=3.0, $fn=24);\n    translate([125.0, 15.0, -1])\n        cylinder(h=3+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 40×20 ضخامت 12 با سوراخ مرکزی و mounting در گوشه‌ها"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mixed plate: 40x20x12mm, center bore Ø8 + 4 corner holes Ø3\ndifference() {\n    cube([40, 20, 12]);\n    translate([20.0, 10.0, -1])\n        cylinder(h=12+2, r=4.0, $fn=24);\n    translate([4.5, 4.5, -1])\n        cylinder(h=12+2, r=1.5, $fn=24);\n    translate([35.5, 4.5, -1])\n        cylinder(h=12+2, r=1.5, $fn=24);\n    translate([4.5, 15.5, -1])\n        cylinder(h=12+2, r=1.5, $fn=24);\n    translate([35.5, 15.5, -1])\n        cylinder(h=12+2, r=1.5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Rectangular plate 40x20mm thick 4mm, offset hole Ø2 at x=12.8, y=-0.74"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 40x20x4mm, Ø2 at (12.8,-0.74)\ndifference() {\n    cube([40, 20, 4]);\n    translate([32.8, 9.26, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Two-hole rectangular plate 40×20×20, holes Ø12mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 40x20x20mm, Ø12mm\ndifference() {\n    cube([40, 20, 20]);\n    translate([19.02, 7.1, -1])\n        cylinder(h=20+2, r=6.0, $fn=24);\n    translate([23.6, 15.12, -1])\n        cylinder(h=20+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a rectangular plate 80x40mm, 15mm thick, drill two Ø3.2mm holes"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 80x40x15mm, Ø3.2mm\ndifference() {\n    cube([80, 40, 15]);\n    translate([40.0, 10.0, -1])\n        cylinder(h=15+2, r=1.6, $fn=24);\n    translate([40.0, 30.0, -1])\n        cylinder(h=15+2, r=1.6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "صفحه مستطیلی 40×20 ضخامت 8 با چهار سوراخ گوشه قطر 12"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with four corner holes: 40x20x8mm, Ø12mm\ndifference() {\n    cube([40, 20, 8]);\n    translate([9.0, 9.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([31.0, 9.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([9.0, 11.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([31.0, 11.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø80×4mm with asymmetric hole placement"
+      },
+      {
+        "role": "assistant",
+        "content": "// Disk with asymmetric holes: Ø80mm, 4mm thick, irregular placement\ndifference() {\n    cylinder(h=4, r=40.0, $fn=40);\n    translate([-10.28, 12.05, -1])\n        cylinder(h=4+2, r=3.0, $fn=24);\n    translate([2.82, 15.12, -1])\n        cylinder(h=4+2, r=3.0, $fn=24);\n    translate([-28.79, -13.27, -1])\n        cylinder(h=4+2, r=3.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 250×120×8 plate with 6 bolt holes Ø12 on BCD 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with bolt circle: 250x120x8mm, 6 holes Ø12 on BCD 30\ndifference() {\n    cube([250, 120, 8]);\n    translate([140.0, 60.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([132.5, 72.99, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([117.5, 72.99, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([110.0, 60.0, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([117.5, 47.01, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n    translate([132.5, 47.01, -1])\n        cylinder(h=8+2, r=6.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 40×20×4mm rectangular plate with two through-holes Ø2mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with two holes: 40x20x4mm, Ø2mm\ndifference() {\n    cube([40, 20, 4]);\n    translate([10.0, 10.0, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n    translate([30.0, 10.0, -1])\n        cylinder(h=4+2, r=1.0, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flat rectangular plate 120x60, 5mm, single off-center hole Ø2.5 at (-33.94,-11.11)"
+      },
+      {
+        "role": "assistant",
+        "content": "// Rectangular plate with offset hole: 120x60x5mm, Ø2.5 at (-33.94,-11.11)\ndifference() {\n    cube([120, 60, 5]);\n    translate([26.06, 18.89, -1])\n        cylinder(h=5+2, r=1.25, $fn=24);\n}"
+      }
+    ]
+  }
+]
