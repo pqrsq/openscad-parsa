@@ -1,0 +1,302 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A mechanical flange: disk Ø150mm, shaft hole Ø25mm, 4 bolts on BCD 120mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 4 bolts: Ø150mm × 20mm, shaft Ø25, BCD 120mm, bolts Ø6\ndifference() {\n    cylinder(h=20, r=75.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=20+2, d=25, $fn=40);\n    translate([60.0, 0.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([0.0, 60.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([-60.0, 0.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n    translate([-0.0, -60.0, -1])\n        cylinder(h=20+2, d=6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A mechanical flange: disk Ø100mm, shaft hole Ø15mm, 4 bolts on BCD 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Small flange: Ø100mm × 10mm, shaft Ø15, 4 bolts Ø4 on BCD 70mm\ndifference() {\n    cylinder(h=10, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=15, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([0.0, 35.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange plate: Ø80 disk, Ø30 center bore, 5 × bolt holes on BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 5 bolts: Ø80mm × 10mm, shaft Ø30, BCD 50mm, bolts Ø5\ndifference() {\n    cylinder(h=10, r=40.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=30, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([7.725, 23.776, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([7.725, -23.776, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج دایره‌ای با سوراخ شفت و پیچ‌های محیطی: 200×30×6×BCD50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Large flange: Ø200mm × 10mm, shaft Ø30, 6 bolts Ø6 on BCD 50mm\ndifference() {\n    cylinder(h=10, r=100.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=30, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([12.5, 21.651, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    translate([12.5, -21.651, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای بساز: قطر 100، سوراخ شفت 15، 4 سوراخ پیچ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Small flange: Ø100mm × 5mm, shaft Ø15, 4 bolts Ø4 on BCD 50mm\ndifference() {\n    cylinder(h=5, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=5+2, d=15, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n    translate([0.0, 25.0, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n    translate([-0.0, -25.0, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange plate: Ø100 disk, Ø15 center bore, 4 × bolt holes on BCD 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Small flange: Ø100mm × 10mm, shaft Ø15, 4 bolts Ø4 on BCD 70mm\ndifference() {\n    cylinder(h=10, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=15, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([0.0, 35.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای بساز: قطر 80، سوراخ شفت 10، 8 سوراخ پیچ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 8 bolts: Ø80mm × 15mm, shaft Ø10, BCD 50mm, bolts Ø6\ndifference() {\n    cylinder(h=15, r=40.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=15+2, d=10, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([17.678, 17.678, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([0.0, 25.0, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([-17.678, 17.678, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([-17.678, -17.678, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([-0.0, -25.0, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    translate([17.678, -17.678, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت فلنج: دیسک 100، سوراخ وسط 15، 5 سوراخ پیچ در دایره 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Small flange: Ø100mm × 10mm, shaft Ø15, 5 bolts Ø5 on BCD 70mm\ndifference() {\n    cylinder(h=10, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=15, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([10.816, 33.287, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([-28.316, 20.572, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([-28.316, -20.572, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n    translate([10.816, -33.287, -1])\n        cylinder(h=10+2, d=5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange plate: Ø200 disk, Ø25 center bore, 8 × bolt holes on BCD 150"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø200mm, thickness 15mm, shaft hole Ø25, 8 bolts Ø8 on BCD 150mm\ndifference() {\n    cylinder(h=15, r=100.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=15+2, d=25, $fn=40);\n    // Bolt hole\n    translate([75.0, 0.0, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([53.033, 53.033, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([0.0, 75.0, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-53.033, 53.033, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-75.0, 0.0, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-53.033, -53.033, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-0.0, -75.0, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    // Bolt hole\n    translate([53.033, -53.033, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج مکانیکی قطر 150 با سوراخ مرکزی 25 و آرایه 5 تایی پیچ روی BCD 120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø150mm, thickness 5mm, shaft hole Ø25, 5 bolts Ø5 on BCD 120mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=5+2, d=25, $fn=40);\n    // Bolt hole\n    translate([60.0, 0.0, -1])\n        cylinder(h=5+2, d=5, $fn=24);\n    // Bolt hole\n    translate([18.541, 57.063, -1])\n        cylinder(h=5+2, d=5, $fn=24);\n    // Bolt hole\n    translate([-48.541, 35.267, -1])\n        cylinder(h=5+2, d=5, $fn=24);\n    // Bolt hole\n    translate([-48.541, -35.267, -1])\n        cylinder(h=5+2, d=5, $fn=24);\n    // Bolt hole\n    translate([18.541, -57.063, -1])\n        cylinder(h=5+2, d=5, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج قطر 100 با سوراخ مرکزی 10 و 3 سوراخ پیچ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 3 bolts: Ø100mm × 12mm, shaft Ø10, BCD 50mm, bolts Ø8\ndifference() {\n    cylinder(h=12, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=12+2, d=10, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج دایره‌ای با سوراخ شفت و پیچ‌های محیطی: 120×30×8×BCD70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Large flange: Ø120mm × 10mm, shaft Ø30, 8 bolts Ø10 on BCD 70mm\ndifference() {\n    cylinder(h=10, r=60.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=30, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([24.749, 24.749, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([0.0, 35.0, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([-24.749, 24.749, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([-24.749, -24.749, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n    translate([24.749, -24.749, -1])\n        cylinder(h=10+2, d=10, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flange disk Ø100mm with shaft hole Ø30 and 3 bolt holes on BCD 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø100mm, thickness 5mm, shaft hole Ø30, 3 bolts Ø4 on BCD 70mm\ndifference() {\n    cylinder(h=5, r=50.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=5+2, d=30, $fn=40);\n    // Bolt hole\n    translate([35.0, 0.0, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-17.5, 30.311, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-17.5, -30.311, -1])\n        cylinder(h=5+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange Ø80 with center bore Ø30 and 8-bolt circle on BCD 50mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 8 bolts: Ø80mm × 12mm, shaft Ø30, BCD 50mm, bolts Ø4\ndifference() {\n    cylinder(h=12, r=40.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=12+2, d=30, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([17.678, 17.678, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([0.0, 25.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([-17.678, 17.678, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([-17.678, -17.678, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([-0.0, -25.0, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n    translate([17.678, -17.678, -1])\n        cylinder(h=12+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج دایره‌ای با سوراخ شفت و پیچ‌های محیطی: 100×20×5×BCD50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 5 bolts: Ø100mm × 15mm, shaft Ø20, BCD 50mm, bolts Ø8\ndifference() {\n    cylinder(h=15, r=50.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=15+2, d=20, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    translate([7.725, 23.776, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n    translate([7.725, -23.776, -1])\n        cylinder(h=15+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت فلنج: دیسک 200، سوراخ وسط 10، 5 سوراخ پیچ در دایره 120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø200mm, thickness 10mm, shaft hole Ø10, 5 bolts Ø6 on BCD 120mm\ndifference() {\n    cylinder(h=10, r=100.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=10, $fn=40);\n    // Bolt hole\n    translate([60.0, 0.0, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    // Bolt hole\n    translate([18.541, 57.063, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    // Bolt hole\n    translate([-48.541, 35.267, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    // Bolt hole\n    translate([-48.541, -35.267, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n    // Bolt hole\n    translate([18.541, -57.063, -1])\n        cylinder(h=10+2, d=6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A mechanical flange: disk Ø120mm, shaft hole Ø25mm, 8 bolts on BCD 90mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø120mm, thickness 10mm, shaft hole Ø25, 8 bolts Ø4 on BCD 90mm\ndifference() {\n    cylinder(h=10, r=60.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=25, $fn=40);\n    // Bolt hole\n    translate([45.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([31.82, 31.82, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([0.0, 45.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-31.82, 31.82, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-45.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-31.82, -31.82, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-0.0, -45.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([31.82, -31.82, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a flange disk Ø80mm with shaft hole Ø25 and 4 bolt holes on BCD 50mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 4 bolts: Ø80mm × 8mm, shaft Ø25, BCD 50mm, bolts Ø8\ndifference() {\n    cylinder(h=8, r=40.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=8+2, d=25, $fn=40);\n    translate([25.0, 0.0, -1])\n        cylinder(h=8+2, d=8, $fn=24);\n    translate([0.0, 25.0, -1])\n        cylinder(h=8+2, d=8, $fn=24);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=8+2, d=8, $fn=24);\n    translate([-0.0, -25.0, -1])\n        cylinder(h=8+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت فلنج: دیسک 80، سوراخ وسط 30، 8 سوراخ پیچ در دایره 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø80mm, thickness 12mm, shaft hole Ø30, 8 bolts Ø8 on BCD 50mm\ndifference() {\n    cylinder(h=12, r=40.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=12+2, d=30, $fn=40);\n    // Bolt hole\n    translate([25.0, 0.0, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([17.678, 17.678, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([0.0, 25.0, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-17.678, 17.678, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-25.0, 0.0, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-17.678, -17.678, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([-0.0, -25.0, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n    // Bolt hole\n    translate([17.678, -17.678, -1])\n        cylinder(h=12+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange plate: Ø200 disk, Ø30 center bore, 8 × bolt holes on BCD 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Large flange: Ø200mm × 10mm, shaft Ø30, 8 bolts Ø8 on BCD 70mm\ndifference() {\n    cylinder(h=10, r=100.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=30, $fn=40);\n    translate([35.0, 0.0, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([24.749, 24.749, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([0.0, 35.0, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([-24.749, 24.749, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([-24.749, -24.749, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n    translate([24.749, -24.749, -1])\n        cylinder(h=10+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای بساز: قطر 200، سوراخ شفت 30، 5 سوراخ پیچ روی BCD 120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 5 bolts: Ø200mm × 8mm, shaft Ø30, BCD 120mm, bolts Ø4\ndifference() {\n    cylinder(h=8, r=100.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=8+2, d=30, $fn=40);\n    translate([60.0, 0.0, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([18.541, 57.063, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([-48.541, 35.267, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([-48.541, -35.267, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n    translate([18.541, -57.063, -1])\n        cylinder(h=8+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Circular flange Ø80mm, thickness 10, shaft Ø30, 8 bolts Ø4 on BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø80mm, thickness 10mm, shaft hole Ø30, 8 bolts Ø4 on BCD 50mm\ndifference() {\n    cylinder(h=10, r=40.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=10+2, d=30, $fn=40);\n    // Bolt hole\n    translate([25.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([17.678, 17.678, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([0.0, 25.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-17.678, 17.678, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-25.0, 0.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-17.678, -17.678, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([-0.0, -25.0, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n    // Bolt hole\n    translate([17.678, -17.678, -1])\n        cylinder(h=10+2, d=4, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange plate: Ø200 disk, Ø25 center bore, 8 × bolt holes on BCD 150"
+      },
+      {
+        "role": "assistant",
+        "content": "// Large flange: Ø200mm × 20mm, shaft Ø25, 8 bolts Ø8 on BCD 150mm\ndifference() {\n    cylinder(h=20, r=100.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=20+2, d=25, $fn=40);\n    translate([75.0, 0.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([53.033, 53.033, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([0.0, 75.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([-53.033, 53.033, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([-75.0, 0.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([-53.033, -53.033, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([-0.0, -75.0, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n    translate([53.033, -53.033, -1])\n        cylinder(h=20+2, d=8, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای بساز: قطر 150، سوراخ شفت 25، 8 سوراخ پیچ روی BCD 120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Flange with 8 bolts: Ø150mm × 5mm, shaft Ø25, BCD 120mm, bolts Ø6\ndifference() {\n    cylinder(h=5, r=75.0, $fn=60);\n    translate([0, 0, -1])\n        cylinder(h=5+2, d=25, $fn=40);\n    translate([60.0, 0.0, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([42.426, 42.426, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([0.0, 60.0, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([-42.426, 42.426, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([-60.0, 0.0, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([-42.426, -42.426, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([-0.0, -60.0, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n    translate([42.426, -42.426, -1])\n        cylinder(h=5+2, d=6, $fn=24);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای بساز: قطر 80، سوراخ شفت 30، 5 سوراخ پیچ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Mechanical flange: Ø80mm, thickness 15mm, shaft hole Ø30, 5 bolts Ø6 on BCD 50mm\ndifference() {\n    cylinder(h=15, r=40.0, $fn=60);\n    // Center shaft hole\n    translate([0, 0, -1])\n        cylinder(h=15+2, d=30, $fn=40);\n    // Bolt hole\n    translate([25.0, 0.0, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    // Bolt hole\n    translate([7.725, 23.776, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    // Bolt hole\n    translate([-20.225, 14.695, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    // Bolt hole\n    translate([-20.225, -14.695, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n    // Bolt hole\n    translate([7.725, -23.776, -1])\n        cylinder(h=15+2, d=6, $fn=24);\n}"
+      }
+    ]
+  }
+]
