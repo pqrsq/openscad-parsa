@@ -1,0 +1,1202 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Stepped circular part: Ø120 base × Ø40 step, total 15mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø120mm × 8mm, step Ø40mm × 7mm\ncylinder(h=8, r=60.0, $fn=100);\ntranslate([0, 0, 8])\n    cylinder(h=7, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid disk diameter 200mm thickness 8mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 200mm, thickness 8mm\ncylinder(h=8, r=100.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج پیچی بساز: قطر 150 ضخامت 5 با 4 سوراخ پیچ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø150mm, 4 bolt holes on BCD 50mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([0.0, 25.0, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([-0.0, -25.0, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange with bolt circle: 5 × M8 holes on PCD 50mm, disk Ø200 × 15mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 5 bolt holes on BCD 50mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=100.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([7.725, 23.776, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([7.725, -23.776, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid disk diameter 40mm thickness 10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 40mm, thickness 10mm\ncylinder(h=10, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk diameter 60mm thickness 5mm with a center bore of 12mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=60mm, thickness=5mm, bore=12mm\ndifference() {\n    cylinder(h=5, r=30.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=5+2, r=6.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک با قطر 60 و ضخامت 20 با سوراخ مرکزی قطر 3 بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=60mm, thickness=20mm, bore=3mm\ndifference() {\n    cylinder(h=20, r=30.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=20+2, r=1.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل‌سازی یک صفحه گرد با 6 سوراخ تقارن شعاعی روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 6 holes on BCD=50mm, thickness=10mm\ndifference() {\n    cylinder(h=10, r=40.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=10+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه با سوراخ مرکزی بساز قطر 200 ضخامت 5 سوراخ 3 میلی‌متر"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=200mm, thickness=5mm, bore=3mm\ndifference() {\n    cylinder(h=5, r=100.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=5+2, r=1.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج مهندسی با آرایش دایره‌ای 6 سوراخ روی BCD 90"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø120mm, 6 bolt holes on BCD 90mm, thickness=30mm\ndifference() {\n    cylinder(h=30, r=60.0, $fn=100);\n    translate([45.0, 0.0, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([22.5, 38.971, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([-22.5, 38.971, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([-45.0, 0.0, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([-22.5, -38.971, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([22.5, -38.971, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل یک فلنج پلکانی با قطرهای متفاوت"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø150mm × 5mm, step Ø120mm × 5mm\ncylinder(h=5, r=75.0, $fn=100);\ntranslate([0, 0, 5])\n    cylinder(h=5, r=60.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle pattern: disk Ø80 × 3mm, 10 bolt holes Ø12 on BCD 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø80mm, 10 bolt holes on BCD 30mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([12.135, 8.817, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([4.635, 14.266, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-4.635, 14.266, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-12.135, 8.817, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-12.135, -8.817, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-4.635, -14.266, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([4.635, -14.266, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([12.135, -8.817, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه دایره‌ای توپر به قطر 200 و ضخامت 30 بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 200mm, thickness 30mm\ncylinder(h=30, r=100.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a bolt circle flange: OD 100mm, 5mm thick, 6 holes on BCD 50, hole Ø10"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø100mm, 6 bolt holes on BCD 50mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=50.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=5+2, r=5.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت فلنج با 4 سوراخ پیچ روی BCD 30 دیسک قطر 150 ضخامت 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø150mm, 4 bolt holes on BCD 30mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=75.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=3+2, r=5.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک حلقه توپر با ابعاد قطر 40 و ارتفاع 15 مدل‌سازی کن"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 40mm, thickness 15mm\ncylinder(h=15, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک دایره‌ای توخالی با ابعاد 150×20 و سوراخ 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=20mm, bore=3mm\ndifference() {\n    cylinder(h=20, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=20+2, r=1.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل یک فلنج پلکانی با قطرهای متفاوت"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø100mm × 10mm, step Ø80mm × 20mm\ncylinder(h=10, r=50.0, $fn=100);\ntranslate([0, 0, 10])\n    cylinder(h=20, r=40.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای با سوراخ وسط بساز: قطر 150 ضخامت 5 سوراخ 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=5mm, bore=5mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=5+2, r=2.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle pattern: disk Ø200 × 3mm, 4 bolt holes Ø5 on BCD 120mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 4 bolt holes on BCD 120mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=100.0, $fn=100);\n    translate([60.0, 0.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([0.0, 60.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-60.0, 0.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-0.0, -60.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج مهندسی با آرایش دایره‌ای 4 سوراخ روی BCD 90"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø120mm, 4 bolt holes on BCD 90mm, thickness=10mm\ndifference() {\n    cylinder(h=10, r=60.0, $fn=100);\n    translate([45.0, 0.0, -1])\n        cylinder(h=10+2, r=2.5, $fn=40);\n    translate([0.0, 45.0, -1])\n        cylinder(h=10+2, r=2.5, $fn=40);\n    translate([-45.0, 0.0, -1])\n        cylinder(h=10+2, r=2.5, $fn=40);\n    translate([-0.0, -45.0, -1])\n        cylinder(h=10+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø150 × 5mm with 6 evenly spaced holes on BCD 50mm, hole Ø6"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 6 holes on BCD=50mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=5+2, r=3.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک مکانیکی بساز با 5 سوراخ روی محیط دایره‌ای به قطر 120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=200mm, 5 holes on BCD=120mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=100.0, $fn=100);\n    translate([60.0, 0.0, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([18.541, 57.063, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([-48.541, 35.267, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([-48.541, -35.267, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n    translate([18.541, -57.063, -1])\n        cylinder(h=5+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Disk Ø80, 5mm thick, 8 holes Ø3 equally spaced on BCD 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 8 holes on BCD=30mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([10.607, 10.607, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([-10.607, 10.607, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([-10.607, -10.607, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n    translate([10.607, -10.607, -1])\n        cylinder(h=5+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid round plate Ø150 × 20mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 150mm, thickness 20mm\ncylinder(h=20, r=75.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک مخروطی پلکانی با قطر پایه 100 و قطر بالا 80 و ضخامت کل 20"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø100mm × 10mm, step Ø80mm × 10mm\ncylinder(h=10, r=50.0, $fn=100);\ntranslate([0, 0, 10])\n    cylinder(h=10, r=40.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a circular plate Ø100 × 8mm with a central hole Ø3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=100mm, thickness=8mm, bore=3mm\ndifference() {\n    cylinder(h=8, r=50.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=8+2, r=1.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک توپر با قطر 120 میلی‌متر و ضخامت 8 میلی‌متر بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 120mm, thickness 8mm\ncylinder(h=8, r=60.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid disk diameter 60mm thickness 5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 60mm, thickness 5mm\ncylinder(h=5, r=30.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid disk diameter 40mm thickness 10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 40mm, thickness 10mm\ncylinder(h=10, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک با قطر 60 و ضخامت 20 با سوراخ مرکزی قطر 8 بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=60mm, thickness=20mm, bore=8mm\ndifference() {\n    cylinder(h=20, r=30.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=20+2, r=4.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a plate Ø150 × 3mm with asymmetrically placed holes at various offsets"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=150mm, thickness=3mm, irregular hole placement\ndifference() {\n    cylinder(h=3, r=75.0, $fn=100);\n    translate([36.15, -11.3, -1])\n        cylinder(h=3+2, r=3.0, $fn=40);\n    translate([21.75, 30.09, -1])\n        cylinder(h=3+2, r=3.0, $fn=40);\n    translate([-32.23, -43.62, -1])\n        cylinder(h=3+2, r=3.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Build a flat cylinder disk diameter 150mm and height 10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 150mm, thickness 10mm\ncylinder(h=10, r=75.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 3-hole circular plate, OD=120mm, 15mm thick, holes on pitch circle 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=120mm, 3 holes on BCD=70mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=60.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=15+2, r=1.5, $fn=40);\n    translate([-17.5, 30.311, -1])\n        cylinder(h=15+2, r=1.5, $fn=40);\n    translate([-17.5, -30.311, -1])\n        cylinder(h=15+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 80 ضخامت 8 با 6 سوراخ مساوی روی دایره قطر 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 6 holes on BCD=50mm, thickness=8mm\ndifference() {\n    cylinder(h=8, r=40.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle flange: 3 evenly spaced Ø5 holes on 90mm BCD, disk Ø150×8mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø150mm, 3 bolt holes on BCD 90mm, thickness=8mm\ndifference() {\n    cylinder(h=8, r=75.0, $fn=100);\n    translate([45.0, 0.0, -1])\n        cylinder(h=8+2, r=2.5, $fn=40);\n    translate([-22.5, 38.971, -1])\n        cylinder(h=8+2, r=2.5, $fn=40);\n    translate([-22.5, -38.971, -1])\n        cylinder(h=8+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 150 ضخامت 30 با 10 سوراخ مساوی روی دایره قطر 30"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 10 holes on BCD=30mm, thickness=30mm\ndifference() {\n    cylinder(h=30, r=75.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([12.135, 8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([4.635, 14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-4.635, 14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-12.135, 8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-12.135, -8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-4.635, -14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([4.635, -14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([12.135, -8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate with 3 radial holes: diameter 150, thickness 3, holes Ø5 on BCD 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 3 holes on BCD=70mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=75.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-17.5, 30.311, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-17.5, -30.311, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک مکانیکی با سوراخ‌های نامتقارن بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=100mm, thickness=8mm, irregular hole placement\ndifference() {\n    cylinder(h=8, r=50.0, $fn=100);\n    translate([10.1, 13.4, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-30.78, 32.8, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([0.58, 13.69, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-14.25, 16.17, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([4.46, -25.27, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه پیچی با آرایه دایره‌ای بساز: 6 سوراخ BCD 70 قطر دیسک 100 ضخامت 8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø100mm, 6 bolt holes on BCD 70mm, thickness=8mm\ndifference() {\n    cylinder(h=8, r=50.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n    translate([17.5, 30.311, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n    translate([-17.5, 30.311, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n    translate([-17.5, -30.311, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n    translate([17.5, -30.311, -1])\n        cylinder(h=8+2, r=3.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک 4 سوراخه قطر 120 ضخامت 15 سوراخ‌ها با فاصله مساوی"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=120mm, 4 holes on BCD=30mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=60.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک مخروطی پلکانی با قطر پایه 100 و قطر بالا 40 و ضخامت کل 30"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø100mm × 3mm, step Ø40mm × 27mm\ncylinder(h=3, r=50.0, $fn=100);\ntranslate([0, 0, 3])\n    cylinder(h=27, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A center-hole disk: OD=60mm, thickness=30mm, bore=2mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=60mm, thickness=30mm, bore=2mm\ndifference() {\n    cylinder(h=30, r=30.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=30+2, r=1.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای با سوراخ وسط بساز: قطر 200 ضخامت 3 سوراخ 3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=200mm, thickness=3mm, bore=3mm\ndifference() {\n    cylinder(h=3, r=100.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=3+2, r=1.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate with irregular hole placement, diameter 120mm, thickness 3mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=120mm, thickness=3mm, irregular hole placement\ndifference() {\n    cylinder(h=3, r=60.0, $fn=100);\n    translate([-22.98, -38.38, -1])\n        cylinder(h=3+2, r=3.0, $fn=40);\n    translate([-6.41, 22.4, -1])\n        cylinder(h=3+2, r=3.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج دایره‌ای با سوراخ وسط بساز: قطر 80 ضخامت 10 سوراخ 8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=80mm, thickness=10mm, bore=8mm\ndifference() {\n    cylinder(h=10, r=40.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=10+2, r=4.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه با 4 سوراخ رادیال بساز: قطر 200 ضخامت 15 سوراخ‌ها روی BCD 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=200mm, 4 holes on BCD=70mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=100.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([0.0, 35.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک 5 سوراخه قطر 80 ضخامت 30 سوراخ‌ها با فاصله مساوی"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 5 holes on BCD=30mm, thickness=30mm\ndifference() {\n    cylinder(h=30, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([4.635, 14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-12.135, 8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-12.135, -8.817, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([4.635, -14.266, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Circular plate Ø150 with 8 symmetrically placed holes Ø4 on circle Ø120"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 8 holes on BCD=120mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([60.0, 0.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([42.426, 42.426, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([0.0, 60.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([-42.426, 42.426, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([-60.0, 0.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([-42.426, -42.426, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([-0.0, -60.0, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([42.426, -42.426, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid round plate Ø150 × 10mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 150mm, thickness 10mm\ncylinder(h=10, r=75.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک توپر با قطر 150 میلی‌متر و ضخامت 3 میلی‌متر بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 150mm, thickness 3mm\ncylinder(h=3, r=75.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle flange: 6 evenly spaced Ø12 holes on 70mm BCD, disk Ø120×5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø120mm, 6 bolt holes on BCD 70mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=60.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n    translate([17.5, 30.311, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n    translate([-17.5, 30.311, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n    translate([-17.5, -30.311, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n    translate([17.5, -30.311, -1])\n        cylinder(h=5+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج پیچی بساز: قطر 200 ضخامت 20 با 8 سوراخ پیچ روی BCD 70"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 8 bolt holes on BCD 70mm, thickness=20mm\ndifference() {\n    cylinder(h=20, r=100.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([24.749, 24.749, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([0.0, 35.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-24.749, 24.749, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-24.749, -24.749, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-0.0, -35.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([24.749, -24.749, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک صفحه با سوراخ‌های غیرمتمرکز بساز قطر 120 ضخامت 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=120mm, thickness=5mm, irregular hole placement\ndifference() {\n    cylinder(h=5, r=60.0, $fn=100);\n    translate([-14.92, 6.11, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([25.45, 43.43, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n    translate([-26.85, -34.42, -1])\n        cylinder(h=5+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid round plate Ø60 × 5mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 60mm, thickness 5mm\ncylinder(h=5, r=30.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج دایره‌ای با 6 سوراخ پیچ روی دایره 50 میلی‌متر قطر دیسک 100"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø100mm, 6 bolt holes on BCD 50mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=50.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=15+2, r=3.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "OpenSCAD disk with Ø150 outer, Ø10 center bore, 10mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=10mm, bore=10mm\ndifference() {\n    cylinder(h=10, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=10+2, r=5.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه دایره‌ای با سوراخ‌های پراکنده در نقاط مختلف"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=100mm, thickness=3mm, irregular hole placement\ndifference() {\n    cylinder(h=3, r=50.0, $fn=100);\n    translate([-12.71, 26.96, -1])\n        cylinder(h=3+2, r=4.0, $fn=40);\n    translate([34.55, -16.34, -1])\n        cylinder(h=3+2, r=4.0, $fn=40);\n    translate([10.47, -7.42, -1])\n        cylinder(h=3+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a solid circular plate with diameter 80mm and thickness 5mm in OpenSCAD"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 80mm, thickness 5mm\ncylinder(h=5, r=40.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Stepped circular part: Ø120 base × Ø100 step, total 30mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø120mm × 10mm, step Ø100mm × 20mm\ncylinder(h=10, r=60.0, $fn=100);\ntranslate([0, 0, 10])\n    cylinder(h=20, r=50.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Disk Ø80, 30mm thick, 8 holes Ø4 equally spaced on BCD 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 8 holes on BCD=30mm, thickness=30mm\ndifference() {\n    cylinder(h=30, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([10.607, 10.607, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([-10.607, 10.607, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([-10.607, -10.607, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n    translate([10.607, -10.607, -1])\n        cylinder(h=30+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک دایره‌ای توخالی با ابعاد 150×15 و سوراخ 6"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=15mm, bore=6mm\ndifference() {\n    cylinder(h=15, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=15+2, r=3.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A center-hole disk: OD=100mm, thickness=15mm, bore=10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=100mm, thickness=15mm, bore=10mm\ndifference() {\n    cylinder(h=15, r=50.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=15+2, r=5.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a bolt circle flange: OD 150mm, 20mm thick, 5 holes on BCD 50, hole Ø5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø150mm, 5 bolt holes on BCD 50mm, thickness=20mm\ndifference() {\n    cylinder(h=20, r=75.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([7.725, 23.776, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([7.725, -23.776, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک واشر بزرگ بساز با قطر بیرونی 80 ضخامت 8 و سوراخ داخلی 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=80mm, thickness=8mm, bore=5mm\ndifference() {\n    cylinder(h=8, r=40.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=8+2, r=2.5, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk diameter 150mm thickness 5mm with a center bore of 6mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=5mm, bore=6mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=5+2, r=3.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a circular plate Ø120 × 20mm with a central hole Ø8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=120mm, thickness=20mm, bore=8mm\ndifference() {\n    cylinder(h=20, r=60.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=20+2, r=4.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت صفحه دایره‌ای با سوراخ‌های پراکنده در نقاط مختلف"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=150mm, thickness=15mm, irregular hole placement\ndifference() {\n    cylinder(h=15, r=75.0, $fn=100);\n    translate([49.54, -38.43, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n    translate([-56.5, -7.93, -1])\n        cylinder(h=15+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a solid disk diameter 40mm thickness 3mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 40mm, thickness 3mm\ncylinder(h=3, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل یک فلنج پلکانی با قطرهای متفاوت"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø80mm × 5mm, step Ø60mm × 15mm\ncylinder(h=5, r=40.0, $fn=100);\ntranslate([0, 0, 5])\n    cylinder(h=15, r=30.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A disk with off-center holes at engineering coordinates, Ø150 × 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=150mm, thickness=30mm, irregular hole placement\ndifference() {\n    cylinder(h=30, r=75.0, $fn=100);\n    translate([-34.42, 39.26, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n    translate([-4.92, -24.16, -1])\n        cylinder(h=30+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 8-hole circular plate, OD=200mm, 30mm thick, holes on pitch circle 120mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=200mm, 8 holes on BCD=120mm, thickness=30mm\ndifference() {\n    cylinder(h=30, r=100.0, $fn=100);\n    translate([60.0, 0.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([42.426, 42.426, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([0.0, 60.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-42.426, 42.426, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-60.0, 0.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-42.426, -42.426, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([-0.0, -60.0, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n    translate([42.426, -42.426, -1])\n        cylinder(h=30+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک مخروطی پلکانی با قطر پایه 150 و قطر بالا 60 و ضخامت کل 10"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø150mm × 5mm, step Ø60mm × 5mm\ncylinder(h=5, r=75.0, $fn=100);\ntranslate([0, 0, 5])\n    cylinder(h=5, r=30.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت سیلندر تخت به قطر 100 میلی‌متر و ضخامت 5"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 100mm, thickness 5mm\ncylinder(h=5, r=50.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Stepped circular part: Ø100 base × Ø40 step, total 10mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø100mm × 3mm, step Ø40mm × 7mm\ncylinder(h=3, r=50.0, $fn=100);\ntranslate([0, 0, 3])\n    cylinder(h=7, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle flange: 3 evenly spaced Ø12 holes on 30mm BCD, disk Ø100×10mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø100mm, 3 bolt holes on BCD 30mm, thickness=10mm\ndifference() {\n    cylinder(h=10, r=50.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=10+2, r=6.0, $fn=40);\n    translate([-7.5, 12.99, -1])\n        cylinder(h=10+2, r=6.0, $fn=40);\n    translate([-7.5, -12.99, -1])\n        cylinder(h=10+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک دایره‌ای توخالی با ابعاد 150×5 و سوراخ 10"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=150mm, thickness=5mm, bore=10mm\ndifference() {\n    cylinder(h=5, r=75.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=5+2, r=5.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid round plate Ø60 × 20mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 60mm, thickness 20mm\ncylinder(h=20, r=30.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک با سوراخ‌های در موقعیت‌های دلخواه: قطر 100 ضخامت 20"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=100mm, thickness=20mm, irregular hole placement\ndifference() {\n    cylinder(h=20, r=50.0, $fn=100);\n    translate([-18.42, 30.2, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([-33.24, 9.94, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([24.37, -33.74, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([-12.32, -27.32, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "فلنج مهندسی با آرایش دایره‌ای 3 سوراخ روی BCD 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 3 bolt holes on BCD 50mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=100.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Flange with bolt circle: 5 × M5 holes on PCD 50mm, disk Ø120 × 5mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø120mm, 5 bolt holes on BCD 50mm, thickness=5mm\ndifference() {\n    cylinder(h=5, r=60.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=5+2, r=2.5, $fn=40);\n    translate([7.725, 23.776, -1])\n        cylinder(h=5+2, r=2.5, $fn=40);\n    translate([-20.225, 14.695, -1])\n        cylinder(h=5+2, r=2.5, $fn=40);\n    translate([-20.225, -14.695, -1])\n        cylinder(h=5+2, r=2.5, $fn=40);\n    translate([7.725, -23.776, -1])\n        cylinder(h=5+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Plate with irregular hole placement, diameter 100mm, thickness 8mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=100mm, thickness=8mm, irregular hole placement\ndifference() {\n    cylinder(h=8, r=50.0, $fn=100);\n    translate([19.88, -28.25, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n    translate([-17.9, -23.73, -1])\n        cylinder(h=8+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Build a flat cylinder disk diameter 80mm and height 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 80mm, thickness 30mm\ncylinder(h=30, r=40.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 100 ضخامت 20 با سوراخ‌های نامتقارن در مختصات دلخواه"
+      },
+      {
+        "role": "assistant",
+        "content": "// Asymmetric holes disk: OD=100mm, thickness=20mm, irregular hole placement\ndifference() {\n    cylinder(h=20, r=50.0, $fn=100);\n    translate([4.51, -28.72, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([32.93, 14.14, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([-9.68, 3.89, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([-5.2, -33.9, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n    translate([-10.02, 32.05, -1])\n        cylinder(h=20+2, r=4.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a disk Ø80 × 20mm with 10 evenly spaced holes on BCD 30mm, hole Ø3"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 10 holes on BCD=30mm, thickness=20mm\ndifference() {\n    cylinder(h=20, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([12.135, 8.817, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([4.635, 14.266, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([-4.635, 14.266, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([-12.135, 8.817, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([-12.135, -8.817, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([-4.635, -14.266, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([4.635, -14.266, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n    translate([12.135, -8.817, -1])\n        cylinder(h=20+2, r=1.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل یک دیسک با سوراخ وسط: قطر بیرونی 100 سوراخ 6 ضخامت 10"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=100mm, thickness=10mm, bore=6mm\ndifference() {\n    cylinder(h=10, r=50.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=10+2, r=3.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "ساخت دیسک دایره‌ای توخالی با ابعاد 120×8 و سوراخ 8"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=120mm, thickness=8mm, bore=8mm\ndifference() {\n    cylinder(h=8, r=60.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=8+2, r=4.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل یک فلنج پلکانی با قطرهای متفاوت"
+      },
+      {
+        "role": "assistant",
+        "content": "// Stepped disk: base Ø100mm × 3mm, step Ø40mm × 7mm\ncylinder(h=3, r=50.0, $fn=100);\ntranslate([0, 0, 3])\n    cylinder(h=7, r=20.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a solid circular plate with diameter 150mm and thickness 8mm in OpenSCAD"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 150mm, thickness 8mm\ncylinder(h=8, r=75.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک 10 سوراخه قطر 100 ضخامت 15 سوراخ‌ها با فاصله مساوی"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=100mm, 10 holes on BCD=70mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=50.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([28.316, 20.572, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([10.816, 33.287, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-10.816, 33.287, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-28.316, 20.572, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-28.316, -20.572, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-10.816, -33.287, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([10.816, -33.287, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([28.316, -20.572, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate a circular plate Ø60 × 8mm with a central hole Ø4"
+      },
+      {
+        "role": "assistant",
+        "content": "// Center hole disk: OD=60mm, thickness=8mm, bore=4mm\ndifference() {\n    cylinder(h=8, r=30.0, $fn=100);\n    translate([0, 0, -1])\n        cylinder(h=8+2, r=2.0, $fn=60);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "A 4-hole circular plate, OD=150mm, 3mm thick, holes on pitch circle 30mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 4 holes on BCD=30mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=75.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=3+2, r=2.0, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=3+2, r=2.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=3+2, r=2.0, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=3+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle flange: 8 evenly spaced Ø5 holes on 90mm BCD, disk Ø200×3mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 8 bolt holes on BCD 90mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=100.0, $fn=100);\n    translate([45.0, 0.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([31.82, 31.82, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([0.0, 45.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-31.82, 31.82, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-45.0, 0.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-31.82, -31.82, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([-0.0, -45.0, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n    translate([31.82, -31.82, -1])\n        cylinder(h=3+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Model a solid round plate Ø120 × 3mm thick"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 120mm, thickness 3mm\ncylinder(h=3, r=60.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bolt circle pattern: disk Ø200 × 3mm, 10 bolt holes Ø12 on BCD 70mm"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø200mm, 10 bolt holes on BCD 70mm, thickness=3mm\ndifference() {\n    cylinder(h=3, r=100.0, $fn=100);\n    translate([35.0, 0.0, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([28.316, 20.572, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([10.816, 33.287, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-10.816, 33.287, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-28.316, 20.572, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-35.0, 0.0, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-28.316, -20.572, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([-10.816, -33.287, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([10.816, -33.287, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n    translate([28.316, -20.572, -1])\n        cylinder(h=3+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک فلنج پیچی بساز: قطر 80 ضخامت 15 با 6 سوراخ پیچ روی BCD 30"
+      },
+      {
+        "role": "assistant",
+        "content": "// Bolt circle flange: disk Ø80mm, 6 bolt holes on BCD 30mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n    translate([7.5, 12.99, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n    translate([-7.5, 12.99, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n    translate([-7.5, -12.99, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n    translate([7.5, -12.99, -1])\n        cylinder(h=15+2, r=6.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک توپر با قطر 120 میلی‌متر و ضخامت 8 میلی‌متر بساز"
+      },
+      {
+        "role": "assistant",
+        "content": "// Solid disk: diameter 120mm, thickness 8mm\ncylinder(h=8, r=60.0, $fn=100);"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "دیسک قطر 80 ضخامت 15 با 8 سوراخ مساوی روی دایره قطر 30"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 8 holes on BCD=30mm, thickness=15mm\ndifference() {\n    cylinder(h=15, r=40.0, $fn=100);\n    translate([15.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([10.607, 10.607, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([0.0, 15.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-10.607, 10.607, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-15.0, 0.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-10.607, -10.607, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([-0.0, -15.0, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n    translate([10.607, -10.607, -1])\n        cylinder(h=15+2, r=2.0, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "مدل‌سازی یک صفحه گرد با 10 سوراخ تقارن شعاعی روی BCD 90"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=150mm, 10 holes on BCD=90mm, thickness=20mm\ndifference() {\n    cylinder(h=20, r=75.0, $fn=100);\n    translate([45.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([36.406, 26.45, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([13.906, 42.798, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-13.906, 42.798, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-36.406, 26.45, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-45.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-36.406, -26.45, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-13.906, -42.798, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([13.906, -42.798, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([36.406, -26.45, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "یک دیسک مکانیکی بساز با 6 سوراخ روی محیط دایره‌ای به قطر 50"
+      },
+      {
+        "role": "assistant",
+        "content": "// Radial holes disk: OD=80mm, 6 holes on BCD=50mm, thickness=20mm\ndifference() {\n    cylinder(h=20, r=40.0, $fn=100);\n    translate([25.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([12.5, 21.651, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-12.5, 21.651, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-25.0, 0.0, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([-12.5, -21.651, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n    translate([12.5, -21.651, -1])\n        cylinder(h=20+2, r=2.5, $fn=40);\n}"
+      }
+    ]
+  }
+]
